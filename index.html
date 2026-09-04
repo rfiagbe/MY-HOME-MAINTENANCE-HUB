@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Home maintenance schedule, reminders and history">
+<title>Home Maintenance Hub</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A1%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Home Hub">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-emoji">🏡</div>
+    <p>Loading your home…</p>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="brand-mark">🏡</span>
+      <div>
+        <h1 id="homeName">Home Maintenance Hub</h1>
+        <p id="homeSub" class="muted-sm">—</p>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <span id="syncPill" class="pill pill-idle" title="Storage status">Local</span>
+      <button id="btnRefresh" class="icon-btn" title="Reload data" aria-label="Reload data">⟳</button>
+    </div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab is-active" data-view="dashboard" role="tab">Dashboard</button>
+  <button class="tab" data-view="tasks" role="tab">All Tasks</button>
+  <button class="tab" data-view="history" role="tab">History</button>
+  <button class="tab" data-view="reports" role="tab">Reports</button>
+  <button class="tab" data-view="settings" role="tab">Settings</button>
+</nav>
+
+<main id="app">
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <section id="view-dashboard" class="view is-active">
+
+    <div id="warrantyBanner" class="banner hidden"></div>
+
+    <div class="stat-row" id="statRow"></div>
+
+    <div class="group" id="grpOverdue">
+      <div class="group-head">
+        <h2>Overdue <span class="count" id="cOverdue">0</span></h2>
+      </div>
+      <div class="cards" id="listOverdue"></div>
+    </div>
+
+    <div class="group" id="grpToday">
+      <div class="group-head">
+        <h2>Due today <span class="count" id="cToday">0</span></h2>
+      </div>
+      <div class="cards" id="listToday"></div>
+    </div>
+
+    <div class="group" id="grpWeek">
+      <div class="group-head">
+        <h2>Next 7 days <span class="count" id="cWeek">0</span></h2>
+      </div>
+      <div class="cards" id="listWeek"></div>
+    </div>
+
+    <div class="group" id="grpMonth">
+      <div class="group-head">
+        <h2>Next 30 days <span class="count" id="cMonth">0</span></h2>
+      </div>
+      <div class="cards" id="listMonth"></div>
+    </div>
+
+    <div class="group" id="grpLater">
+      <div class="group-head">
+        <h2>Coming later <span class="count" id="cLater">0</span></h2>
+      </div>
+      <div class="cards" id="listLater"></div>
+    </div>
+
+  </section>
+
+  <!-- ===================== ALL TASKS ===================== -->
+  <section id="view-tasks" class="view">
+    <div class="toolbar">
+      <input type="search" id="taskSearch" placeholder="Search tasks…" autocomplete="off">
+      <select id="catFilter"><option value="">All categories</option></select>
+      <select id="stateFilter">
+        <option value="active">Active only</option>
+        <option value="all">Include disabled</option>
+        <option value="disabled">Disabled only</option>
+      </select>
+    </div>
+    <p class="muted-sm" id="taskCount"></p>
+    <div class="cards" id="listAll"></div>
+  </section>
+
+  <!-- ===================== HISTORY ===================== -->
+  <section id="view-history" class="view">
+    <div class="toolbar">
+      <input type="search" id="histSearch" placeholder="Search history…" autocomplete="off">
+      <select id="histCat"><option value="">All categories</option></select>
+      <select id="histYear"><option value="">All time</option></select>
+    </div>
+    <p class="muted-sm" id="histSummary"></p>
+    <div id="histList" class="timeline"></div>
+  </section>
+
+  <!-- ===================== REPORTS ===================== -->
+  <section id="view-reports" class="view">
+    <div class="stat-row" id="repStats"></div>
+
+    <div class="panel">
+      <h2>Completions by month</h2>
+      <div id="chartMonths" class="chart-months"></div>
+    </div>
+
+    <div class="panel">
+      <h2>By category</h2>
+      <div id="chartCats" class="chart-bars"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Schedule health</h2>
+      <div id="healthTable"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Spend</h2>
+      <div id="costTable"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Attention needed</h2>
+      <p class="muted-sm">Active tasks you have never completed, most overdue first.</p>
+      <div id="neverDone"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SETTINGS ===================== -->
+  <section id="view-settings" class="view">
+
+    <div class="panel">
+      <h2>Saving to GitHub</h2>
+      <p class="muted-sm">
+        Paste a <strong>fine-grained personal access token</strong> scoped to only this repository with
+        <strong>Contents: Read and write</strong>. It is stored in this browser only and is never sent
+        anywhere except api.github.com.
+      </p>
+      <label class="field">
+        <span>Repository <code>owner/name</code></span>
+        <input type="text" id="cfgRepo" placeholder="rfiagbe/MY-HOME-MAINTENANCE-HUB" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>Branch</span>
+        <input type="text" id="cfgBranch" placeholder="main" autocomplete="off">
+      </label>
+      <label class="field">
+        <span>Token</span>
+        <input type="password" id="cfgToken" placeholder="github_pat_…" autocomplete="off">
+      </label>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="btnSaveCfg">Save &amp; connect</button>
+        <button class="btn" id="btnTestCfg">Test connection</button>
+        <button class="btn btn-danger-ghost" id="btnClearCfg">Forget token</button>
+      </div>
+      <p id="cfgStatus" class="status"></p>
+    </div>
+
+    <div class="panel">
+      <h2>Reminder email</h2>
+      <p class="muted-sm">
+        Reminders are sent by a GitHub Action that runs once a day: one a week before a task is due,
+        and one on the day it's due. Change the address here, then press Save — it writes to
+        <code>data/tasks.json</code>, which the Action reads.
+      </p>
+      <label class="field">
+        <span>Send reminders to</span>
+        <input type="email" id="cfgEmail" placeholder="you@example.com" autocomplete="off">
+      </label>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="btnSaveEmail">Save email</button>
+      </div>
+      <p id="emailStatus" class="status"></p>
+    </div>
+
+    <div class="panel">
+      <h2>What this home has</h2>
+      <p class="muted-sm">Turning a feature off hides and disables every task that depends on it.</p>
+      <div id="featureList" class="feature-list"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Home notes</h2>
+      <p class="muted-sm">Model and serial numbers, filter sizes, contractor phone numbers, account numbers.</p>
+      <textarea id="cfgNotes" rows="10" placeholder="HVAC filter size: 20x25x1&#10;Goodman model / serial:&#10;Water heater model / serial:&#10;LG fridge filter part #:&#10;Builder warranty line:&#10;Natural Air:&#10;Pest control:"></textarea>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="btnSaveNotes">Save notes</button>
+      </div>
+      <p id="notesStatus" class="status"></p>
+    </div>
+
+    <div class="panel">
+      <h2>Data</h2>
+      <div class="btn-row">
+        <button class="btn" id="btnExport">Export backup (.json)</button>
+        <button class="btn" id="btnPull">Pull latest from GitHub</button>
+      </div>
+      <p class="muted-sm" id="dataInfo"></p>
+    </div>
+
+    <div class="panel">
+      <h2>About</h2>
+      <p class="muted-sm">
+        Schedules come from manufacturer guidance for your specific equipment (Goodman, State Water Heaters,
+        Hunter, LG, Samsung) plus Florida-specific and new-construction requirements. Every task lists its
+        source. Open any task to see why it matters and how to do it.
+      </p>
+      <p class="muted-sm" id="aboutCounts"></p>
+    </div>
+
+  </section>
+</main>
+
+<!-- ===================== TASK DETAIL SHEET ===================== -->
+<div id="sheet" class="sheet-wrap hidden" role="dialog" aria-modal="true">
+  <div class="sheet-scrim" data-close></div>
+  <div class="sheet">
+    <div class="sheet-grab" data-close></div>
+    <div class="sheet-body" id="sheetBody"></div>
+  </div>
+</div>
+
+<!-- ===================== COMPLETE DIALOG ===================== -->
+<div id="doneDlg" class="sheet-wrap hidden" role="dialog" aria-modal="true">
+  <div class="sheet-scrim" data-close></div>
+  <div class="sheet sheet-sm">
+    <div class="sheet-body">
+      <h2 id="doneTitle">Mark complete</h2>
+      <label class="field">
+        <span>Date completed</span>
+        <input type="date" id="doneDate">
+      </label>
+      <label class="field">
+        <span>Cost (optional)</span>
+        <input type="number" id="doneCost" min="0" step="0.01" placeholder="0.00">
+      </label>
+      <label class="field">
+        <span>Who did it</span>
+        <select id="doneBy">
+          <option value="me">Me / DIY</option>
+          <option value="pro">Hired a pro</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Notes (optional)</span>
+        <textarea id="doneNotes" rows="3" placeholder="Filter size, invoice #, what you found…"></textarea>
+      </label>
+      <p class="muted-sm" id="donePreview"></p>
+      <div class="btn-row">
+        <button class="btn btn-primary" id="doneConfirm">Save</button>
+        <button class="btn" data-close>Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="./app.js"></script>
+</body>
+</html>

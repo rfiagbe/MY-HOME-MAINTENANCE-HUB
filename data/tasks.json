@@ -1,0 +1,3997 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-04",
+  "home": {
+    "nickname": "1940 Noble Drive",
+    "state": "FL",
+    "moveInDate": "2026-07-28",
+    "construction": "new",
+    "reminderEmail": "1940nobledrive@gmail.com",
+    "equipment": {
+      "ac_installer": "Natural Air Energy Saving Systems",
+      "hvac": "Goodman Air Conditioning & Heating",
+      "irrigation": "Hunter Irrigation Systems",
+      "water_heater": "State Water Heaters",
+      "washer": "LG",
+      "dryer": "LG",
+      "refrigerator": "LG",
+      "range": "Samsung",
+      "cooktop": "Samsung",
+      "microwave": "Samsung"
+    },
+    "features": {
+      "pool": false,
+      "septic": false,
+      "well": false,
+      "waterSoftener": false,
+      "gasAppliances": false,
+      "fireplace": false,
+      "twoStory": false,
+      "screenedLanai": true,
+      "irrigation": true,
+      "garage": true,
+      "dishwasher": true
+    },
+    "warranty": {
+      "workmanship1yr": "2027-07-28",
+      "systems2yr": "2028-07-28",
+      "structural10yr": "2036-07-28"
+    }
+  },
+  "tasks": [
+    {
+      "id": "pool-baskets",
+      "title": "Empty skimmer and pump baskets",
+      "category": "Pool & Spa",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 7
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "A clogged basket starves the pump, which runs hot and can burn out the motor seal -- a several-hundred-dollar failure caused by a two-minute chore.",
+      "steps": [
+        "Turn the pump OFF before opening the pump lid.",
+        "Empty the skimmer basket(s) and the pump strainer basket.",
+        "Rinse and reseat; check the pump lid O-ring and lubricate it if dry.",
+        "Restore the pump and confirm the basket fills with water and there's no air in the lid."
+      ],
+      "source": "Standard pool equipment maintenance.",
+      "requires": "pool",
+      "nextDue": "2026-09-04",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pool-brush-vac",
+      "title": "Brush and vacuum the pool",
+      "category": "Pool & Spa",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 7
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 40,
+      "estCost": 0,
+      "why": "Algae takes hold on surfaces the circulation doesn't reach -- steps, corners, behind ladders. Brushing is what actually prevents it; chlorine alone doesn't.",
+      "steps": [
+        "Brush walls, steps and the waterline, working toward the main drain.",
+        "Vacuum debris off the floor.",
+        "Skim the surface.",
+        "Empty the pool cleaner's bag if you have one."
+      ],
+      "source": "Standard pool care guidance.",
+      "requires": "pool",
+      "nextDue": "2026-09-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-aerators",
+      "title": "Clean faucet aerators and showerheads",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          9
+        ],
+        "day": 5
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 5,
+      "why": "Central Florida water is hard. Scale in the aerator screens shows up as weak, spitting or sideways flow, and people replace whole faucets over a $2 screen.",
+      "steps": [
+        "Unscrew each aerator (a cloth protects the finish from the pliers).",
+        "Soak parts in white vinegar for an hour, then brush the screen clear.",
+        "For showerheads, bag vinegar around the head with a rubber band and soak overnight.",
+        "Reassemble and run to flush loose grit."
+      ],
+      "source": "Standard hard-water plumbing maintenance.",
+      "requires": null,
+      "nextDue": "2026-09-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-dryer-sensor",
+      "title": "Wipe dryer moisture sensor strips",
+      "category": "Laundry",
+      "equipment": "LG dryer",
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 5,
+      "estCost": 1,
+      "why": "LG calls for monthly cleaning of the moisture sensors with rubbing alcohol. When they're coated in softener residue the dryer thinks clothes are dry and shuts off early -- the classic 'my dryer stopped drying' complaint.",
+      "steps": [
+        "Find the two curved metal strips inside the drum, usually just below the lint trap opening.",
+        "Wipe them with a cotton ball dampened with rubbing alcohol.",
+        "Let them dry before running a load."
+      ],
+      "source": "LG dryer maintenance: wipe moisture sensor strips with rubbing alcohol monthly.",
+      "requires": null,
+      "nextDue": "2026-09-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-gasket-wipe",
+      "title": "Wipe washer door gasket dry",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "interval",
+        "days": 7
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 3,
+      "estCost": 0,
+      "why": "Thirty seconds a week is the whole difference between a fresh washer and a moldy one. Water pools in the fold at the bottom of the boot after every load.",
+      "steps": [
+        "Peel back the rubber door boot and wipe the fold with a dry cloth.",
+        "Wipe the door glass and the frame.",
+        "Leave the door and the dispenser drawer ajar between uses."
+      ],
+      "source": "LG: wipe away visible water from drum, gasket and door glass; leave door open to reduce odor.",
+      "requires": null,
+      "nextDue": "2026-09-06",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "garage-door-safety",
+      "title": "Test garage door auto-reverse safety",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "The photo-eye sensors and the door's own force reversal are what stop it from closing on a child or a pet. Manufacturers ask for a monthly test and it takes 60 seconds.",
+      "steps": [
+        "Photo-eye test: with the door closing, wave a broom through the beam near the floor -- the door must reverse immediately.",
+        "Force test: lay a 2x4 flat on the floor in the door's path and close it -- the door must reverse on contact.",
+        "Confirm the photo-eye LEDs are lit and aligned.",
+        "If either test fails, stop using the opener until it's adjusted or serviced."
+      ],
+      "source": "CPSC / garage door opener manufacturer guidance: test monthly.",
+      "requires": "garage",
+      "nextDue": "2026-09-07",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-dryer-lint",
+      "title": "Clean dryer lint trap",
+      "category": "Laundry",
+      "equipment": "LG dryer",
+      "schedule": {
+        "type": "interval",
+        "days": 7
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 5,
+      "estCost": 0,
+      "why": "LG says clean it before or after every single load. This is a reminder to also do a deeper wipe -- fabric softener sheets leave an invisible film on the screen that blocks airflow.",
+      "steps": [
+        "Pull the lint screen and clear it after each load.",
+        "Weekly: wash the screen with warm soapy water and a brush to strip softener film, then dry it fully before reinserting.",
+        "Water should pass straight through a clean screen -- if it beads up, it needs scrubbing."
+      ],
+      "source": "LG dryer maintenance: clean the lint trap before or after each load.",
+      "requires": null,
+      "nextDue": "2026-09-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "softener-salt",
+      "title": "Check water softener salt level",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 25,
+      "why": "If the brine tank runs dry the softener stops regenerating and hard water goes straight through, scaling your water heater and fixtures without any obvious signal.",
+      "steps": [
+        "Open the brine tank; salt should sit above the water line, roughly two-thirds full.",
+        "Top up with the salt type your unit specifies (pellets vs. crystals matters).",
+        "Break up any 'salt bridge' -- a hard crust that leaves an air gap under it.",
+        "Note your usage rate so you can buy ahead."
+      ],
+      "source": "Water softener manufacturer guidance.",
+      "requires": "waterSoftener",
+      "nextDue": "2026-09-09",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-micro-grease",
+      "title": "Clean Samsung microwave grease filter",
+      "category": "Kitchen",
+      "equipment": "Samsung microwave",
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "Samsung specifies cleaning the grease filter at least once a month. A saturated filter stops venting your cooktop and can drip grease back onto the range.",
+      "steps": [
+        "Slide the metal mesh filter(s) out from the underside of the microwave.",
+        "Soak in hot water with degreasing dish soap for 10 minutes.",
+        "Scrub gently with a soft brush, rinse, dry completely.",
+        "Slide back in -- never run the microwave vent without the filter installed."
+      ],
+      "source": "Samsung: remove and clean the grease filter at least once per month.",
+      "requires": null,
+      "nextDue": "2026-09-09",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-hoses-check",
+      "title": "Inspect washer fill hoses",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          9
+        ],
+        "day": 10
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "A burst washer hose delivers about 600 gallons an hour. It's one of the most common large water-damage claims there is, and it's completely preventable.",
+      "steps": [
+        "Pull the washer out far enough to see both hoses.",
+        "Look for bulges, blisters, rust at the crimps, and dampness at the connections.",
+        "Confirm both are hand-tight plus a quarter turn -- not cranked.",
+        "Consider braided stainless hoses if yours are rubber.",
+        "Locate the shutoff valves and make sure you could reach them fast."
+      ],
+      "source": "Standard homeowner insurance loss-prevention guidance.",
+      "requires": null,
+      "nextDue": "2026-09-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pool-chemistry",
+      "title": "Test and balance pool chemistry",
+      "category": "Pool & Spa",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 7
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 15,
+      "why": "Unbalanced water etches plaster, corrodes the heater and pump seals, and stops sanitizing. Florida heat and rain swing the numbers fast, so weekly is the floor, not the ideal.",
+      "steps": [
+        "Test free chlorine (1-3 ppm), pH (7.4-7.6), total alkalinity (80-120 ppm), cyanuric acid (30-50 ppm).",
+        "Adjust one thing at a time and retest after circulation.",
+        "Check calcium hardness monthly (200-400 ppm).",
+        "Log the readings in this task's notes so you can see trends."
+      ],
+      "source": "Standard residential pool care guidance.",
+      "requires": "pool",
+      "nextDue": "2026-09-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-filter",
+      "title": "Replace HVAC air filter",
+      "category": "HVAC",
+      "equipment": "Goodman air handler",
+      "schedule": {
+        "type": "interval",
+        "days": 45
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 25,
+      "why": "Florida runs the AC nearly year-round, so filters load up fast. A clogged filter chokes airflow, can freeze the evaporator coil, drives up your power bill, and neglect can jeopardize Goodman's parts warranty.",
+      "steps": [
+        "Read the filter size printed on the edge of the old filter and save it in this task's notes.",
+        "Set the thermostat to OFF so the blower isn't pulling while the slot is open.",
+        "Slide the old filter out; slide the new one in with the AIRFLOW ARROW pointing toward the air handler.",
+        "Turn the thermostat back on.",
+        "Write today's date on the new filter's cardboard edge with a marker."
+      ],
+      "source": "Goodman: replace/clean every 1-3 months. Florida HVAC guidance tightens this to 30-60 days in high-use season.",
+      "requires": null,
+      "nextDue": "2026-09-11",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-micro-interior",
+      "title": "Clean microwave interior and turntable",
+      "category": "Kitchen",
+      "equipment": "Samsung microwave",
+      "schedule": {
+        "type": "interval",
+        "days": 14
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "Baked-on splatter absorbs microwave energy, creates hot spots, and can scorch. Steam does most of the work for you.",
+      "steps": [
+        "Microwave a bowl of water with lemon slices for 4 minutes; let it sit 3 minutes.",
+        "Wipe the interior, ceiling and door with a soft damp cloth.",
+        "Wash the turntable and roller ring.",
+        "Wipe the control panel with a barely-damp soft cloth only -- no sprays or abrasives."
+      ],
+      "source": "Samsung: wipe with a soft cloth and warm soapy water; avoid sprays, abrasives and sharp objects on the panel.",
+      "requires": null,
+      "nextDue": "2026-09-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-main-shutoff",
+      "title": "Locate and label the main water shutoff",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2026-09-12"
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 15,
+      "why": "The single most valuable ten minutes a new homeowner can spend. When a line lets go you have about 90 seconds of useful thinking time, and that is not when you want to be hunting for a valve in the dark.",
+      "steps": [
+        "Find the main shutoff -- typically at the street meter box, and often a second one where the line enters the house.",
+        "Open the meter box lid (a long screwdriver helps) and confirm you can reach and turn the valve.",
+        "Buy a water meter key if the valve needs one; keep it somewhere obvious.",
+        "Turn the water fully off and back on once so you know it isn't seized.",
+        "Photograph the location, tag the valve, and tell everyone in the house where it is."
+      ],
+      "source": "Universal homeowner emergency-preparedness guidance.",
+      "requires": null,
+      "nextDue": "2026-09-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-cooktop-clean",
+      "title": "Deep clean cooktop and burners",
+      "category": "Kitchen",
+      "equipment": "Samsung cooktop",
+      "schedule": {
+        "type": "interval",
+        "days": 14
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 8,
+      "why": "Beyond the daily wipe: spills that cook onto a glass-ceramic surface can etch it permanently, and on a gas or coil top they block even heating.",
+      "steps": [
+        "Let the surface cool completely.",
+        "Use a cooktop cleaning cream and a non-scratch pad for glass-ceramic; a razor scraper at a low angle for hardened spots.",
+        "Buff dry with a microfiber cloth.",
+        "Check that burner/element seating is clean and even."
+      ],
+      "source": "Samsung cooktop care guidance.",
+      "requires": null,
+      "nextDue": "2026-09-14",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "docs-contractor-list",
+      "title": "Review and update trusted contractor list",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          9
+        ],
+        "day": 15
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Find your plumber before you need a plumber. Emergency-rate strangers found at 11pm are how people get badly overcharged for bad work.",
+      "steps": [
+        "Keep current numbers for: HVAC (Natural Air), plumber, electrician, roofer, pest control, handyman, irrigation, garage door, appliance repair.",
+        "Verify each is still licensed and insured (check at myfloridalicense.com).",
+        "Note who you'd actually call again and who you wouldn't.",
+        "Store the list in this app's Settings > Notes and in your phone contacts."
+      ],
+      "source": "Homeowner best practice.",
+      "requires": null,
+      "nextDue": "2026-09-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "warranty-appliances-register",
+      "title": "Register all appliance warranties",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2026-09-18"
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 0,
+      "why": "LG and Samsung both want registration, and it makes any warranty claim dramatically less painful. You'll also need the model and serial numbers on hand for parts and for your insurance inventory.",
+      "steps": [
+        "Photograph the model and serial plate on: LG washer, LG dryer, LG refrigerator, Samsung range, Samsung cooktop, Samsung microwave, dishwasher, water heater.",
+        "Register the LG appliances at lg.com/us/support/register.",
+        "Register the Samsung appliances at samsung.com/us/support/register.",
+        "Register the State water heater at statewaterheaters.com.",
+        "Record every model/serial number in this app's Settings > Notes, and keep the purchase receipts.",
+        "Note each one's warranty expiration."
+      ],
+      "source": "Manufacturer registration guidance.",
+      "requires": null,
+      "nextDue": "2026-09-18",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-leak-detectors",
+      "title": "Test water leak detectors",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          9
+        ],
+        "day": 18
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 10,
+      "why": "If you have (or add) battery leak sensors under sinks, at the water heater and behind the washer, they only help if the batteries are alive.",
+      "steps": [
+        "Touch a wet finger or damp cloth across each sensor's contacts.",
+        "Confirm each alarms.",
+        "Replace batteries annually regardless.",
+        "If you don't have any yet, this is a ~$15/each upgrade worth making."
+      ],
+      "source": "Loss-prevention best practice.",
+      "requires": null,
+      "nextDue": "2026-09-18",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-register-warranty",
+      "title": "Register Goodman + Natural Air warranty",
+      "category": "HVAC",
+      "equipment": "Goodman system",
+      "schedule": {
+        "type": "once",
+        "date": "2026-09-20"
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "Goodman's best warranty terms usually require online registration within 60 days of installation. If you're past that window, the builder's registration may already cover you -- but you need to confirm and get it in writing.",
+      "steps": [
+        "Find the model and serial number on the outdoor unit's data plate; photograph it.",
+        "Go to goodmanmfg.com warranty registration and check whether the unit is already registered.",
+        "If not registered, register it now and note the installation date from your closing documents.",
+        "Call Natural Air Energy Saving Systems and ask them to email confirmation of registration and your labor warranty term.",
+        "Save all of it in your home documents folder."
+      ],
+      "source": "Goodman: registration required within 60 days of installation for full warranty term.",
+      "requires": null,
+      "nextDue": "2026-09-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "docs-organize",
+      "title": "Organize home documents and manuals",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2026-09-25"
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 120,
+      "estCost": 0,
+      "why": "One folder, physical and digital, with everything. You will want this at the worst possible moment -- a leak, a claim, a warranty dispute -- and hunting for it then is miserable.",
+      "steps": [
+        "Create a cloud folder plus a physical file.",
+        "Collect: closing documents, deed, survey, builder warranty booklet, termite pre-treatment certificate, all appliance manuals and receipts, HVAC install paperwork, insurance policy, permits.",
+        "Photograph every model/serial plate in the house.",
+        "Record contractor contacts: builder warranty line, Natural Air, plumber, electrician, pest control, roofer.",
+        "Put the account numbers and key dates into this app's Settings > Notes."
+      ],
+      "source": "Homeowner records best practice.",
+      "requires": null,
+      "nextDue": "2026-09-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-doors-hardware",
+      "title": "Tighten and lubricate doors, hinges and cabinet hardware",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          9
+        ],
+        "day": 25
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 15,
+      "why": "New-construction settling causes doors to bind and latch poorly within the first year. Cabinet screws work loose from daily use. This is a satisfying hour that makes the whole house feel tight again.",
+      "steps": [
+        "Tighten every cabinet door and drawer pull, and every hinge screw.",
+        "Adjust cabinet door hinges so the doors line up evenly.",
+        "Tighten interior and exterior door hinge screws; use a longer screw in the top hinge if a door sags.",
+        "Lubricate hinges with a dry silicone or white lithium spray.",
+        "Lubricate deadbolts and locksets with graphite or a dry lubricant -- not oil.",
+        "Adjust strike plates on any door that doesn't latch cleanly."
+      ],
+      "source": "New-construction settling; standard hardware maintenance.",
+      "requires": null,
+      "nextDue": "2026-09-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pest-mulch-check",
+      "title": "Verify 6-inch clearance around foundation",
+      "category": "Pest & Termite",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          9
+        ],
+        "day": 25
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Any soil, mulch or vegetation touching the stucco lets termites bypass the treated soil barrier entirely -- and it voids some termite bonds.",
+      "steps": [
+        "Walk the full perimeter.",
+        "Pull mulch and soil back to leave 6 inches of bare foundation visible.",
+        "Trim shrubs back to 3 feet from the wall.",
+        "Remove any wood, cardboard or debris stored against the house.",
+        "Move firewood well away from the structure."
+      ],
+      "source": "Florida termite guidance: maintain a 6-inch mulch-free zone.",
+      "requires": null,
+      "nextDue": "2026-09-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-condensate-flush",
+      "title": "Flush AC condensate drain line with vinegar",
+      "category": "HVAC",
+      "equipment": "Goodman air handler",
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 3,
+      "why": "This is the #1 cause of emergency AC calls in Florida. Algae slime clogs the drain, water backs up into the pan, and the safety float switch shuts your AC off in 95-degree heat -- or worse, it overflows into the ceiling.",
+      "steps": [
+        "Find the condensate drain access -- usually a capped PVC tee near the indoor air handler.",
+        "Turn the system OFF at the thermostat.",
+        "Remove the cap and pour in 1 cup of plain white distilled vinegar.",
+        "Wait 30 minutes, then pour a little water through to confirm it drains freely.",
+        "Replace the cap and turn the system back on.",
+        "Also check the exterior drain outlet is dripping when the AC runs."
+      ],
+      "source": "Florida HVAC standard practice: monthly vinegar flush to prevent biological slime clogs.",
+      "requires": null,
+      "nextDue": "2026-09-27",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-tubclean",
+      "title": "Run LG washer Tub Clean cycle",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 4,
+      "why": "LG asks for monthly maintenance on the washer. Front loaders especially build a biofilm of detergent and body oils behind the drum -- that's where 'my clean laundry smells musty' comes from.",
+      "steps": [
+        "Empty the drum completely.",
+        "Select TUB CLEAN on the control panel.",
+        "Add the recommended tub cleaner tablet or 1 cup of white vinegar (never chlorine bleach plus vinegar).",
+        "Run the full cycle.",
+        "Wipe the door gasket and glass dry afterward, and leave the door ajar."
+      ],
+      "source": "LG washer maintenance: perform maintenance on each section roughly monthly.",
+      "requires": null,
+      "nextDue": "2026-09-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-dispenser",
+      "title": "Clean washer detergent dispenser drawer",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "LG calls out the dispenser specifically -- at least once a month. Congealed detergent and softener residue stops the drawer dispensing properly and grows mold.",
+      "steps": [
+        "Pull the dispenser drawer fully out (there's usually a release tab).",
+        "Soak the drawer and inserts in hot water; scrub with an old toothbrush.",
+        "Wipe out the drawer cavity in the machine, including the jets in the roof of the cavity.",
+        "Dry and reinstall."
+      ],
+      "source": "LG washer maintenance: clean the detergent dispenser at least once a month.",
+      "requires": null,
+      "nextDue": "2026-09-29",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-smoke-test",
+      "title": "Test all smoke and CO alarms",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "Monthly is the manufacturer and NFPA standard. In new construction the alarms are interconnected, so testing one should sound them all -- which also verifies the interconnect wiring the builder installed.",
+      "steps": [
+        "Press and hold the TEST button on each alarm until it sounds.",
+        "Confirm every other alarm in the house sounds too (they should be interconnected).",
+        "Warn the family first so nobody panics.",
+        "Note any unit that doesn't join the chorus -- that's a builder warranty item right now."
+      ],
+      "source": "NFPA / manufacturer standard: test smoke alarms monthly.",
+      "requires": null,
+      "nextDue": "2026-09-29",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "gas-co-detectors",
+      "title": "Test carbon monoxide detectors",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "With gas appliances, CO detection isn't optional. CO is odorless and the symptoms mimic flu, which is exactly why it kills people in their sleep.",
+      "steps": [
+        "Press TEST on every CO alarm.",
+        "Confirm you have one on every level and near sleeping areas.",
+        "Check the manufacture date -- CO sensors expire in 7-10 years regardless of battery.",
+        "Never run a generator, grill or car in the garage."
+      ],
+      "source": "NFPA 720 / CPSC guidance.",
+      "requires": "gasAppliances",
+      "nextDue": "2026-09-29",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-extinguisher",
+      "title": "Check fire extinguishers",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 1
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "A pressure gauge in the green and a quick shake to keep the powder from caking. If you don't have one in the kitchen and the garage, get them -- ABC rated, at least 2A:10B:C.",
+      "steps": [
+        "Confirm the gauge needle is in the green band.",
+        "Check the pin and tamper seal are intact and the nozzle is clear.",
+        "Turn the extinguisher upside down and shake to loosen packed powder.",
+        "Confirm everyone in the house knows where they are and how to use them (PASS: Pull, Aim, Squeeze, Sweep)."
+      ],
+      "source": "NFPA 10 monthly visual inspection guidance (relaxed here to semi-annual for household units).",
+      "requires": null,
+      "nextDue": "2026-10-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "dishwasher-filter",
+      "title": "Clean dishwasher filter",
+      "category": "Kitchen",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "Modern dishwashers have a manual filter that most people never learn exists. When it packs with food, dishes come out gritty and the machine starts to smell.",
+      "steps": [
+        "Pull the bottom rack out.",
+        "Twist the cylindrical filter counter-clockwise and lift it out with the flat mesh screen underneath.",
+        "Rinse both under hot water; scrub with a soft brush and dish soap.",
+        "Reinstall and twist to lock -- make sure it seats fully or the pump can be damaged."
+      ],
+      "source": "Standard dishwasher manufacturer guidance.",
+      "requires": "dishwasher",
+      "nextDue": "2026-10-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lawn-fertilize",
+      "title": "Fertilize lawn",
+      "category": "Irrigation & Lawn",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          5,
+          10
+        ],
+        "day": 1
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 45,
+      "why": "Most Florida counties BAN nitrogen/phosphorus fertilizer June 1 - September 30 during the rainy season, with real fines. That leaves early spring, late spring and fall as your windows.",
+      "steps": [
+        "Check your county's fertilizer ordinance and blackout dates before buying.",
+        "Use a slow-release nitrogen product suited to St. Augustine / Bahia (whatever your sod is).",
+        "Apply with a broadcast spreader at the bag's rate -- more is not better and burns the lawn.",
+        "Sweep granules off driveway and sidewalk back onto grass so they don't wash into storm drains.",
+        "Water in lightly unless rain is expected."
+      ],
+      "source": "Florida county fertilizer ordinances (summer blackout, typically Jun 1 - Sep 30).",
+      "requires": null,
+      "nextDue": "2026-10-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "disposal-clean",
+      "title": "Clean and deodorize garbage disposal",
+      "category": "Kitchen",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 30
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 2,
+      "why": "Food film on the grinding chamber walls and the underside of the splash guard is what actually smells -- not the drain. Ice scours the chamber.",
+      "steps": [
+        "Run a tray of ice cubes plus a half cup of coarse salt through with cold water.",
+        "Follow with citrus peels (lemon or orange).",
+        "Scrub the underside of the rubber splash guard with an old toothbrush and dish soap.",
+        "Never put grease, fibrous vegetables, pasta or rice down it."
+      ],
+      "source": "Standard disposal maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-03",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-condenser-clean",
+      "title": "Clean outdoor condenser unit",
+      "category": "HVAC",
+      "equipment": "Goodman condenser",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 5
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "The outdoor coil dumps your home's heat outside. Grass clippings, dryer lint and Florida pollen mat the fins, so the compressor runs hotter and longer for the same cooling.",
+      "steps": [
+        "Shut power off at the outdoor disconnect box next to the unit.",
+        "Clear leaves, grass and weeds within 2 feet on all sides.",
+        "Rinse the coil fins from the INSIDE out with a garden hose on gentle spray -- never a pressure washer.",
+        "Straighten any bent fins with a fin comb if you have one.",
+        "Restore power and confirm the unit starts normally."
+      ],
+      "source": "Goodman preventive maintenance: keep condenser coils free of dirt and debris.",
+      "requires": null,
+      "nextDue": "2026-10-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "gas-inspection",
+      "title": "Gas line and appliance connection inspection",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          10
+        ],
+        "day": 5
+      },
+      "priority": "critical",
+      "diy": false,
+      "estMinutes": 60,
+      "estCost": 140,
+      "why": "Flexible connectors age and gas fittings can loosen. A licensed tech with a gas sniffer finds what you can't.",
+      "steps": [
+        "Have a licensed plumber or gas tech leak-test all connections and appliance connectors.",
+        "Ask them to check flue draft and combustion on every gas appliance.",
+        "Confirm shutoff valves at each appliance and at the meter work.",
+        "Learn where the main gas shutoff is and keep the wrench with it."
+      ],
+      "source": "Gas utility / appliance manufacturer safety guidance.",
+      "requires": "gasAppliances",
+      "nextDue": "2026-10-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lanai-screen-clean",
+      "title": "Clean lanai screens and frame",
+      "category": "Lanai & Screens",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          10
+        ],
+        "day": 8
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 10,
+      "why": "Screen mesh collects pollen, dust and algae that both blocks airflow and holds moisture against the aluminum frame, accelerating corrosion at the fasteners.",
+      "steps": [
+        "Rinse screens from the inside out with a garden hose (low pressure only -- a pressure washer will blow the mesh out).",
+        "Use a soft brush with mild soap on the frame and any algae.",
+        "Clean the top track and the screen door.",
+        "Rinse thoroughly and let dry."
+      ],
+      "source": "Standard Florida screen enclosure maintenance.",
+      "requires": "screenedLanai",
+      "nextDue": "2026-10-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-hosebibs",
+      "title": "Inspect exterior hose bibs and check for leaks",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 8
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 8,
+      "why": "Outdoor spigots take UV and physical abuse, and a dripping bib on a slab foundation puts constant moisture right where you least want it.",
+      "steps": [
+        "Check each exterior spigot for drips at the handle and the spout.",
+        "Replace worn washers or packing nuts.",
+        "Confirm there's no soft ground or constant wet spot at the wall below.",
+        "Check that hoses are disconnected when not in use."
+      ],
+      "source": "Standard exterior plumbing maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lanai-screen-inspect",
+      "title": "Inspect lanai screen for tears and loose spline",
+      "category": "Lanai & Screens",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          10
+        ],
+        "day": 8
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 20,
+      "why": "One small tear becomes a large one fast under wind load, and it's the entry point for every mosquito and lizard in the county. Spline that has shrunk out of its channel is the usual cause.",
+      "steps": [
+        "Walk the inside perimeter looking for tears, holes and sagging panels.",
+        "Check that the rubber spline is fully seated in its channel all the way around each panel.",
+        "Push spline back in with a spline roller, or patch small tears with screen repair tape.",
+        "Budget for re-screening a panel if it's badly stretched -- it's inexpensive per panel."
+      ],
+      "source": "Standard Florida screen enclosure maintenance.",
+      "requires": "screenedLanai",
+      "nextDue": "2026-10-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-humidity",
+      "title": "Check indoor humidity levels",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 60
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "Florida's whole battle is moisture. Keep indoor relative humidity between 45-55%. Above 60% you get mold, dust mites and that clammy feel; below 35% you get static and wood shrinkage.",
+      "steps": [
+        "Put a cheap hygrometer in the main living area and one in the primary bedroom.",
+        "Read them and log the number in this task's notes.",
+        "If consistently above 60%: run the AC fan on AUTO not ON, use bath and kitchen exhaust fans, consider a dehumidifier, and have the AC checked for oversizing or short cycling.",
+        "Check for condensation on windows and on AC supply vents -- both are warning signs."
+      ],
+      "source": "Florida humidity/mold management guidance (target 45-55% RH).",
+      "requires": null,
+      "nextDue": "2026-10-09",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-tuneup-fall",
+      "title": "Professional HVAC check (heating season)",
+      "category": "HVAC",
+      "equipment": "Goodman system",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          10
+        ],
+        "day": 10
+      },
+      "priority": "normal",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 150,
+      "why": "If your Goodman unit is a heat pump it heats as well as cools, and Goodman asks for service twice a year -- spring for cooling, fall for heating. Even a mild Florida winter needs the reversing valve and aux heat verified.",
+      "steps": [
+        "Schedule the fall visit with Natural Air.",
+        "Ask specifically for heat pump / reversing valve and auxiliary heat strip checks.",
+        "Confirm the emergency heat mode works before the first cold snap.",
+        "File the service report with your warranty documents."
+      ],
+      "source": "Goodman: heat pumps should be serviced twice a year (spring and fall).",
+      "requires": null,
+      "nextDue": "2026-10-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "dryer-vent-hood",
+      "title": "Check exterior dryer vent hood flap",
+      "category": "Laundry",
+      "equipment": "LG dryer",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 12
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "The flap outside should open when the dryer runs and close when it stops. A stuck-open flap is an invitation for lizards, wasps and birds; a stuck-closed one backs lint into the duct.",
+      "steps": [
+        "Run the dryer on air-fluff.",
+        "Go outside and confirm the hood flap opens and you feel strong airflow.",
+        "Clear lint, nests or webs from the hood.",
+        "Confirm the flap closes fully when the dryer stops."
+      ],
+      "source": "Standard dryer vent maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "fireplace-inspect",
+      "title": "Chimney inspection and sweep",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          10
+        ],
+        "day": 12
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 200,
+      "why": "Creosote buildup is what causes chimney fires. Even light seasonal use in Florida still deposits it, and the cap and flashing are common water-entry points.",
+      "steps": [
+        "Hire a CSIA-certified chimney sweep for a Level 1 inspection.",
+        "Have the flue swept if there's measurable creosote.",
+        "Have them check the cap, crown, flashing and damper.",
+        "For a gas log set, have the logs, burner and venting inspected instead."
+      ],
+      "source": "CSIA / NFPA 211: inspect annually.",
+      "requires": "fireplace",
+      "nextDue": "2026-10-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "docs-wind-mitigation",
+      "title": "Get wind mitigation inspection for insurance discount",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2026-10-15"
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 125,
+      "why": "A one-time $75-150 inspection that documents your roof attachment, roof-to-wall connections, opening protection and roof geometry. On a new Florida build these features are all current-code, and the premium credits are often $500-1,500 per year. It typically pays for itself in the first month.",
+      "steps": [
+        "Hire a licensed wind mitigation inspector (form OIR-B1-1802).",
+        "Send the completed form to your homeowners insurance agent and ask them to re-rate the policy.",
+        "Ask specifically whether all applicable credits were applied.",
+        "The form is generally valid for 5 years -- calendar the renewal.",
+        "Keep a copy with your insurance documents."
+      ],
+      "source": "Florida OIR uniform mitigation verification inspection (form OIR-B1-1802).",
+      "requires": null,
+      "nextDue": "2026-10-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-bathfans",
+      "title": "Clean bathroom exhaust fans",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 18
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 40,
+      "estCost": 0,
+      "why": "In Florida these fans are your primary mold defense. A dust-blanketed fan moves almost no air, and most people have never once cleaned theirs.",
+      "steps": [
+        "Kill power at the breaker.",
+        "Pull the grille down (it usually squeezes off spring clips) and wash it in the sink.",
+        "Vacuum the fan blades and housing with a brush attachment.",
+        "Confirm the fan actually pulls -- a square of toilet paper should stick to the grille when running.",
+        "Verify from the attic that the duct vents OUTSIDE, not into the attic space.",
+        "Run the fan for 20 minutes after every shower."
+      ],
+      "source": "Florida humidity / mold prevention guidance.",
+      "requires": null,
+      "nextDue": "2026-10-18",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-nozzle-clean",
+      "title": "Clean sprinkler nozzles and filter screens",
+      "category": "Irrigation & Lawn",
+      "equipment": "Hunter heads",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 20
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 10,
+      "why": "Grit from the municipal line collects in each head's filter screen. Symptoms look exactly like low water pressure or a bad valve, and people replace expensive parts chasing it.",
+      "steps": [
+        "Shut the zone off.",
+        "Unscrew the nozzle and lift the filter screen out of the head's riser.",
+        "Rinse the screen and nozzle; poke the orifice with a thin wire if needed.",
+        "Reassemble, run the zone, and re-aim the spray arc so you're not watering the driveway or house."
+      ],
+      "source": "Hunter Industries homeowner guidance: keep sprinkler heads unclogged.",
+      "requires": "irrigation",
+      "nextDue": "2026-10-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "garage-door-lube",
+      "title": "Lubricate and inspect garage door hardware",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 25
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 12,
+      "why": "Rollers, hinges and springs under a Florida garage's heat and humidity will squeal and wear fast without lubricant. Do NOT touch the torsion spring adjustment -- that's a serious injury risk.",
+      "steps": [
+        "Use a garage-door-specific lithium or silicone spray -- never WD-40 on rollers.",
+        "Lubricate rollers, hinges, bearing plates, and the torsion spring coils.",
+        "Wipe the track clean but do NOT lubricate the track itself.",
+        "Check cables for fraying and check that the door is balanced: disconnect the opener and lift by hand -- it should stay put at waist height.",
+        "Call a pro for spring or cable work. Never adjust the springs yourself."
+      ],
+      "source": "Garage door manufacturer maintenance guidance.",
+      "requires": "garage",
+      "nextDue": "2026-10-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pest-entry-seal",
+      "title": "Seal pest entry points",
+      "category": "Pest & Termite",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          10
+        ],
+        "day": 25
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 35,
+      "why": "Rodents get through a hole the size of a dime and Florida's cool season is when they come inside. The usual routes are the AC lineset penetration, plumbing penetrations, garage door seals and soffit gaps.",
+      "steps": [
+        "Walk the exterior looking for gaps around every pipe, wire and duct penetration.",
+        "Seal small gaps with copper mesh plus sealant; use hardware cloth for larger ones.",
+        "Check the garage door bottom seal and side weatherstripping for gaps and daylight.",
+        "Confirm soffit and gable vents have intact screening.",
+        "Check where the AC refrigerant line enters the wall -- it's very often left unsealed."
+      ],
+      "source": "Standard pest exclusion practice.",
+      "requires": null,
+      "nextDue": "2026-10-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-washer-pan",
+      "title": "Check laundry drain pan and standpipe",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "The pan under the washer only helps if its drain isn't plugged, and a slow standpipe will back up and overflow during a spin cycle's fast drain.",
+      "steps": [
+        "Look in the pan for standing water or debris.",
+        "Confirm the pan's drain line is clear.",
+        "Run a wash cycle and watch the standpipe during drain -- it shouldn't fill and gurgle back.",
+        "Pour a gallon of hot water plus a cup of vinegar down the standpipe if it's sluggish."
+      ],
+      "source": "Standard laundry plumbing maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-26",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-fridge-gaskets",
+      "title": "Clean door gaskets and test the seal",
+      "category": "Kitchen",
+      "equipment": "LG refrigerator",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "A gasket that's sticky with syrup or has taken a set will leak cold air continuously. It's a silent, expensive failure and takes five minutes to check.",
+      "steps": [
+        "Wipe both door gaskets with warm soapy water and dry them.",
+        "Close a dollar bill in the door -- if it slides out with no drag, that spot isn't sealing.",
+        "Check all four sides of both doors.",
+        "Note any failing sections; gaskets are replaceable."
+      ],
+      "source": "LG refrigerator maintenance guidance.",
+      "requires": null,
+      "nextDue": "2026-10-26",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lanai-door-tracks",
+      "title": "Clean and lubricate sliding door tracks",
+      "category": "Lanai & Screens",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 10,
+      "why": "Grit in the track destroys the rollers, and a slider that takes two hands to open is a slider whose rollers are already going. Also a security issue if it doesn't latch cleanly.",
+      "steps": [
+        "Vacuum the track thoroughly, then wipe with a damp cloth.",
+        "Apply a dry silicone lubricant to the track -- not grease or oil, which attract grit.",
+        "Test the door: it should glide with one finger.",
+        "Confirm the latch engages fully and the security bar/pin works.",
+        "Clear the track's weep holes so rain drains out."
+      ],
+      "source": "Standard sliding door maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-27",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-window-weeps",
+      "title": "Clear window tracks and weep holes",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4,
+          10
+        ],
+        "day": 28
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Those little slots at the bottom of the exterior window frame are drains. When they clog with dirt and dead bugs, the track fills during a Florida downpour and water comes in over the sill.",
+      "steps": [
+        "Vacuum every window track and sill.",
+        "Find the weep holes on the exterior bottom of each frame.",
+        "Clear them with a thin wire or compressed air, then pour a cup of water into the track and confirm it drains out.",
+        "Never caulk these shut.",
+        "Also clear sliding glass door tracks and check the rollers."
+      ],
+      "source": "Florida window water-intrusion prevention.",
+      "requires": null,
+      "nextDue": "2026-10-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-dryer-area",
+      "title": "Check laundry room and garage for moisture and mildew",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "Enclosed Florida garages and laundry rooms sit warm and humid. Mildew starts on the concrete and the lowest few inches of drywall where nobody looks.",
+      "steps": [
+        "Check the lower drywall and baseboards in the laundry room and garage for staining or softness.",
+        "Look behind and under the washer and dryer.",
+        "Check stored cardboard boxes for softness or musty smell -- they're an early indicator and also a roach habitat.",
+        "Improve ventilation or add a small dehumidifier if it's persistently damp.",
+        "Move stored items off the floor onto shelves or pallets."
+      ],
+      "source": "Florida humidity/mold management guidance.",
+      "requires": null,
+      "nextDue": "2026-10-29",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-pumpfilter",
+      "title": "Clean washer drain pump filter",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 25,
+      "estCost": 0,
+      "why": "The pump filter catches coins, hair pins and lint. When it clogs the washer throws a drain error mid-cycle and leaves you with a drum full of water.",
+      "steps": [
+        "Put a shallow pan and towels under the small access door at the bottom front.",
+        "Open the door, pull the small drain hose out, uncap it and let the water drain into the pan (there will be more than you expect).",
+        "Unscrew the filter counter-clockwise, clear the debris, rinse it.",
+        "Screw it back in snugly and close the door.",
+        "Run a short rinse cycle and check for leaks."
+      ],
+      "source": "LG front load washer maintenance guidance.",
+      "requires": null,
+      "nextDue": "2026-10-30",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pest-quarterly",
+      "title": "Quarterly pest control service",
+      "category": "Pest & Termite",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": false,
+      "estMinutes": 45,
+      "estCost": 55,
+      "why": "Florida's pest pressure is year-round and relentless -- ants, roaches, palmetto bugs, spiders, the occasional scorpion. Quarterly exterior treatment is the standard here and it's cheaper than reacting.",
+      "steps": [
+        "Confirm your quarterly service is scheduled (or set one up -- typically $40-70 per visit).",
+        "Ask them to treat the perimeter, eaves, lanai and garage.",
+        "Point out any activity you've seen since the last visit.",
+        "Ask about their guarantee for interior re-treats between visits."
+      ],
+      "source": "Standard Florida pest management practice.",
+      "requires": null,
+      "nextDue": "2026-10-30",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-vents-clean",
+      "title": "Clean supply and return vents / registers",
+      "category": "HVAC",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "Dusty registers throw that dust straight back into your rooms and restrict airflow, and a blocked return makes the whole system work harder.",
+      "steps": [
+        "Vacuum every supply register with a brush attachment.",
+        "Pull the return grille and vacuum both sides.",
+        "Wipe grilles with a damp cloth.",
+        "Confirm no furniture, rugs or curtains are blocking any vent."
+      ],
+      "source": "Standard HVAC airflow maintenance.",
+      "requires": null,
+      "nextDue": "2026-10-31",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-thermostat-battery",
+      "title": "Replace thermostat batteries",
+      "category": "HVAC",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          11
+        ],
+        "day": 1
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 5,
+      "estCost": 5,
+      "why": "A dying thermostat battery can drop the call for cooling with no obvious warning. Replacing it on a schedule costs $4 and avoids a mystery no-cool service call.",
+      "steps": [
+        "Pull the thermostat face off the wall plate.",
+        "Replace the AA/AAA batteries (note the type in this task's notes).",
+        "Re-seat the face and confirm the display and the system respond."
+      ],
+      "source": "Manufacturer general guidance: annual battery replacement.",
+      "requires": null,
+      "nextDue": "2026-11-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-gfci-test",
+      "title": "Test GFCI and AFCI outlets and breakers",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "GFCIs protect you from electrocution in wet areas -- kitchen, baths, garage, lanai and exterior. They do fail, and they fail silently in the unprotected state.",
+      "steps": [
+        "Press TEST on each GFCI outlet; the RESET button should pop and the outlet should go dead (check with a lamp or tester).",
+        "Press RESET to restore.",
+        "Do this for every GFCI: kitchen counters, all bathrooms, garage, lanai, exterior.",
+        "Test AFCI breakers in the panel the same way (TEST button on the breaker).",
+        "Any device that won't trip or won't reset needs replacing -- and while you're in year one, that's a builder warranty claim."
+      ],
+      "source": "NEC / manufacturer guidance: test GFCI devices monthly to quarterly.",
+      "requires": null,
+      "nextDue": "2026-11-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-rain-sensor",
+      "title": "Test and clean rain sensor",
+      "category": "Irrigation & Lawn",
+      "equipment": "Hunter rain sensor",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 1
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "Florida law requires a working rain sensor or shutoff device on automatic irrigation systems. A gummed-up sensor means you're watering in a thunderstorm and paying for it.",
+      "steps": [
+        "Locate the rain sensor (usually roof edge or fence, in open sky).",
+        "Clear debris, spider webs and wasp nests from the vents.",
+        "Press/soak the sensor to trigger it, then start a zone manually -- it should refuse to run.",
+        "Let it dry and confirm normal operation returns.",
+        "Replace the sensor if it doesn't trip (they typically last 5-8 years in Florida sun)."
+      ],
+      "source": "Florida Statute 373.62 requires a functioning rain sensor; Hunter sensor maintenance guidance.",
+      "requires": "irrigation",
+      "nextDue": "2026-11-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pool-filter-clean",
+      "title": "Clean pool filter",
+      "category": "Pool & Spa",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 25,
+      "why": "Rising pressure on the filter gauge means restricted flow. Cleaning restores turnover and cuts pump run time.",
+      "steps": [
+        "Note the clean starting pressure; clean whenever it rises 8-10 psi above that.",
+        "Cartridge: remove and hose the pleats out; soak in filter cleaner annually.",
+        "Sand/DE: backwash and rinse, then recharge DE if applicable.",
+        "Check O-rings and lubricate with silicone before reassembling."
+      ],
+      "source": "Pool filter manufacturer guidance.",
+      "requires": "pool",
+      "nextDue": "2026-11-02",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-airhandler-inspect",
+      "title": "Inspect air handler, drain pan and lineset",
+      "category": "HVAC",
+      "equipment": "Goodman air handler",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "A slow leak in the drain pan or sweating, uninsulated refrigerant lines will quietly rot drywall or grow mold in your attic or closet long before you smell anything.",
+      "steps": [
+        "Look in the secondary drain pan under the air handler -- it should be bone dry.",
+        "Check the large insulated copper line; the foam should be intact with no bare cold pipe sweating.",
+        "Look for rust streaks, water stains or musty smell around the cabinet.",
+        "Confirm the emergency float switch is seated and not tripped."
+      ],
+      "source": "Goodman preventive maintenance: inspect coils, refrigerant lines and drains.",
+      "requires": null,
+      "nextDue": "2026-11-02",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-surge-protector",
+      "title": "Check whole-house surge protector status light",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 5,
+      "estCost": 0,
+      "why": "Florida leads the country in lightning strikes. A whole-house surge protector sacrifices itself absorbing surges and then sits there dead with a green light turned off, protecting nothing.",
+      "steps": [
+        "Find the surge protective device at or beside your main panel.",
+        "Confirm the status/protection indicator light is green (or per its manual).",
+        "If the indicator is off or red, the device is spent -- replace it.",
+        "If you don't have one, strongly consider adding one; Florida lightning makes it one of the best $300 you can spend."
+      ],
+      "source": "Manufacturer guidance for surge protective devices; Florida lightning exposure.",
+      "requires": null,
+      "nextDue": "2026-11-03",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-roof-visual",
+      "title": "Visual roof inspection from the ground",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 3
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "You're not getting on the roof. Binoculars from the ground catch lifted or missing shingles, displaced tiles, damaged vent boots and debris piles -- which is 90% of what matters.",
+      "steps": [
+        "Walk the full perimeter with binoculars.",
+        "Look for: missing/lifted/curled shingles or slipped tiles, damaged ridge cap, debris in valleys.",
+        "Check the rubber boots around plumbing vents -- they crack in Florida sun and are a top leak source.",
+        "Check flashing at any wall intersections.",
+        "Look at soffits and fascia for staining, which means water is getting somewhere it shouldn't.",
+        "Photograph anything suspicious with the date -- useful for insurance and warranty claims."
+      ],
+      "source": "Standard Florida roof maintenance; also do this after every named storm.",
+      "requires": null,
+      "nextDue": "2026-11-03",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-smoke-battery",
+      "title": "Replace smoke alarm backup batteries",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          11
+        ],
+        "day": 5
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 25,
+      "why": "Even hardwired alarms have a backup battery. The 3am low-battery chirp always happens on the coldest, busiest night -- do them all at once on a schedule instead.",
+      "steps": [
+        "Replace the backup battery in every alarm, even ones not chirping.",
+        "Vacuum dust out of each alarm's vents while you're up there.",
+        "Test each alarm afterward.",
+        "Note: some newer units have sealed 10-year batteries -- if so, mark this task disabled in Settings."
+      ],
+      "source": "NFPA / manufacturer standard.",
+      "requires": null,
+      "nextDue": "2026-11-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-dryer-housing-vac",
+      "title": "Vacuum lint trap housing and check exhaust vent",
+      "category": "Laundry",
+      "equipment": "LG dryer",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 40,
+      "estCost": 0,
+      "why": "LG's quarterly item. Lint that gets past the screen packs into the housing and the duct -- this is the actual fire risk, not the screen.",
+      "steps": [
+        "Unplug the dryer.",
+        "Vacuum deep into the lint trap slot with a crevice tool or dryer lint brush.",
+        "Pull the dryer out, disconnect the flex duct, and vacuum both the duct and the dryer's outlet.",
+        "Check the duct isn't crushed behind the dryer -- use rigid or semi-rigid metal, never plastic or foil.",
+        "Reconnect with a clamp and push the dryer back, leaving a few inches of clearance."
+      ],
+      "source": "LG dryer maintenance: vacuum lint trap housing and check exhaust vent every 3 months.",
+      "requires": null,
+      "nextDue": "2026-11-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-drainage",
+      "title": "Check grading and drainage away from the foundation",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 6
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 40,
+      "why": "New construction settles in its first couple of years and can create low spots that pond water against the slab. In Florida that's a termite and moisture invitation.",
+      "steps": [
+        "Walk the perimeter after a heavy rain and look for standing water within 6 feet of the house.",
+        "Confirm soil slopes away from the slab -- roughly 6 inches of fall over the first 10 feet.",
+        "Add soil to any settled areas against the foundation (but keep it below the slab/siding line).",
+        "Confirm downspouts and any French drains discharge well away from the house.",
+        "In year one, ponding against the house is a builder warranty item -- report it."
+      ],
+      "source": "New-construction settling + Florida drainage guidance.",
+      "requires": null,
+      "nextDue": "2026-11-06",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-gutters",
+      "title": "Clean gutters and downspouts",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 6
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 0,
+      "why": "Overflowing gutters dump water at the foundation, stain the fascia and soffit, and in Florida they breed mosquitoes in the standing water.",
+      "steps": [
+        "Clear leaves and debris from the full run.",
+        "Flush with a hose and confirm water exits every downspout freely.",
+        "Check that downspout extensions carry water at least 4-6 feet from the foundation.",
+        "Re-secure any loose hangers.",
+        "Look for granule accumulation, which indicates shingle wear."
+      ],
+      "source": "Standard exterior maintenance, adjusted to Florida's wet season.",
+      "requires": null,
+      "nextDue": "2026-11-06",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-exterior-outlets",
+      "title": "Check exterior outlet covers and lighting",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 8
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 25,
+      "why": "Florida rain finds every unsealed exterior outlet. The in-use bubble covers crack in UV and then the box fills with water.",
+      "steps": [
+        "Check every exterior and lanai outlet for a working weatherproof in-use cover.",
+        "Replace cracked or missing covers.",
+        "Test the GFCI protection on each.",
+        "Replace burned-out exterior bulbs and check that motion/photocell fixtures still trigger."
+      ],
+      "source": "NEC weatherproofing requirements / standard exterior maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-leak-check",
+      "title": "Check water heater area for leaks and corrosion",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "Tanks almost never fail without warning -- they weep first. Catching a seep gives you weeks to plan a replacement instead of coming home to a flooded garage.",
+      "steps": [
+        "Look at the floor and drain pan under and around the tank.",
+        "Check the cold inlet and hot outlet connections for green/white crust or drips.",
+        "Feel the pipes and fittings for dampness.",
+        "Confirm the drain pan's discharge line is clear."
+      ],
+      "source": "Standard plumbing preventive maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-09",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-zone-audit",
+      "title": "Run full sprinkler zone-by-zone audit",
+      "category": "Irrigation & Lawn",
+      "equipment": "Hunter controller",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 15,
+      "why": "Hunter's core homeowner guidance is to check for leaks, clogged heads and worn parts. One stuck head can flood a bed and brown out a whole zone, and you'd never notice because it runs at 5am.",
+      "steps": [
+        "At the Hunter controller, use MANUAL mode to run each zone for ~2 minutes.",
+        "Walk each zone while it runs.",
+        "Look for: heads that don't pop up, blocked/misaimed spray, misting (pressure too high), geysers (broken head), soggy spots (leak).",
+        "Clear grass overgrowth around each head with a trimmer or shovel.",
+        "Note any broken heads in this task's notes and replace or call the irrigation company."
+      ],
+      "source": "Hunter Industries homeowner guidance: check for leaks, unclogged heads, and component wear.",
+      "requires": "irrigation",
+      "nextDue": "2026-11-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-oven-deepclean",
+      "title": "Deep clean Samsung oven",
+      "category": "Kitchen",
+      "equipment": "Samsung range",
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 8,
+      "why": "Carbonized grease is what makes an oven smoke and smell. If you use the self-clean cycle, treat it as a scheduled event -- it runs extremely hot and can stress the door lock and thermal fuse.",
+      "steps": [
+        "Remove racks (self-clean discolors them) and wipe out loose debris.",
+        "Run the self-clean cycle, or use a low-fume oven cleaner if you'd rather not.",
+        "Open windows and turn on the range hood -- self-clean produces fumes that are hard on birds and pets.",
+        "After it cools, wipe out the fine ash with a damp cloth.",
+        "Wash racks separately in the sink."
+      ],
+      "source": "Samsung oven care guidance.",
+      "requires": null,
+      "nextDue": "2026-11-11",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-caulk",
+      "title": "Inspect and renew exterior caulk and seals",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          11
+        ],
+        "day": 12
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 120,
+      "estCost": 35,
+      "why": "Every place something penetrates the wall -- windows, doors, hose bibs, the AC lineset, dryer vent, light fixtures -- is a potential water and insect entry. Sealant fails first at the top of windows.",
+      "steps": [
+        "Walk the perimeter and inspect caulk at every window and door.",
+        "Check seals around hose bibs, the AC refrigerant line penetration, dryer vent and exterior fixtures.",
+        "Cut out cracked or separated caulk and re-apply a good exterior polyurethane or hybrid sealant.",
+        "Do NOT caulk the weep holes at the bottom of window frames -- those are supposed to be open."
+      ],
+      "source": "Standard exterior envelope maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "fireplace-damper",
+      "title": "Check fireplace damper and firebox",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          11
+        ],
+        "day": 15
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "A damper left open is a hole in your building envelope -- you're paying to cool the whole neighborhood. A stuck one is a smoke problem.",
+      "steps": [
+        "Open and close the damper fully; it should move freely and seal.",
+        "Look up the flue with a flashlight for obstructions or nesting.",
+        "Check firebox brick and mortar for cracks.",
+        "Confirm the damper is closed and latched when not in use."
+      ],
+      "source": "Standard fireplace maintenance.",
+      "requires": "fireplace",
+      "nextDue": "2026-11-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "dishwasher-clean-cycle",
+      "title": "Run dishwasher cleaner cycle",
+      "category": "Kitchen",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 5,
+      "why": "Descales the spray arms and heating element and clears the grease film in the sump. Florida water is hard enough that scale builds noticeably.",
+      "steps": [
+        "Empty the dishwasher.",
+        "Place a dishwasher cleaner tablet or a cup of white vinegar on the top rack.",
+        "Run the hottest/longest cycle.",
+        "Wipe the door edges and the gasket, which the cycle doesn't reach."
+      ],
+      "source": "Standard dishwasher manufacturer guidance.",
+      "requires": "dishwasher",
+      "nextDue": "2026-11-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lawn-pest-check",
+      "title": "Inspect lawn for chinch bugs and fungus",
+      "category": "Irrigation & Lawn",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 25,
+      "why": "Chinch bugs will kill St. Augustine grass in irregular yellow-brown patches, usually starting in sunny spots near concrete. Caught early it's a $25 treatment; caught late it's resodding.",
+      "steps": [
+        "Walk the sunniest edges of the lawn, especially near driveway and sidewalk.",
+        "Part the grass at the edge of any yellowing patch and look at the soil line for tiny black/white insects.",
+        "Check for brown patch fungus: circular yellowing rings, worse after wet weather.",
+        "Treat or call your lawn service if you find either."
+      ],
+      "source": "UF/IFAS Florida lawn pest guidance.",
+      "requires": null,
+      "nextDue": "2026-11-17",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-weatherstrip",
+      "title": "Check door and window weatherstripping",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          11
+        ],
+        "day": 20
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 35,
+      "why": "You're paying to cool air that leaks straight out. On a Florida slab home, the front and garage entry doors are usually the worst offenders.",
+      "steps": [
+        "Close each exterior door on a dollar bill -- if it pulls out freely, the seal is weak there.",
+        "Look for daylight around closed doors, especially at the bottom corners.",
+        "Check the door sweep at the bottom of each exterior door.",
+        "Replace compressed or torn weatherstripping.",
+        "Check the garage door's bottom seal and side stops."
+      ],
+      "source": "Standard energy-efficiency maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-leak-sweep",
+      "title": "Check under every sink and behind toilets for leaks",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "In new construction, supply connections and P-traps can loosen as the house settles through its first year. A slow drip under a vanity is invisible until the cabinet floor swells.",
+      "steps": [
+        "Empty each under-sink cabinet enough to see the floor.",
+        "Run water and feel every connection: supply valves, supply lines, P-trap joints, disposal fitting.",
+        "Look for water staining, swelling particleboard or a musty smell.",
+        "Check the floor behind and beside each toilet, and the caulk line at the base.",
+        "Lay a paper towel under suspect joints and check it the next day."
+      ],
+      "source": "New-construction settling guidance + standard plumbing maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-attic-inspect",
+      "title": "Inspect attic for leaks, moisture and pests",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5,
+          11
+        ],
+        "day": 20
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "The attic tells you about roof leaks months before a ceiling stain appears. Go up in the morning while it's still cool, and only step on the framing.",
+      "steps": [
+        "Bring a bright flashlight; step only on joists/trusses.",
+        "Look at the underside of the roof deck for dark staining or daylight.",
+        "Check around every penetration: plumbing vents, bath fans, the AC lineset.",
+        "Look for rodent droppings, chewed wiring or insulation, and wasp nests.",
+        "Confirm bath fan ducts actually vent OUTSIDE, not into the attic -- a very common builder defect worth catching under warranty.",
+        "Check insulation depth is even and hasn't been disturbed."
+      ],
+      "source": "Standard attic inspection + Florida moisture guidance.",
+      "requires": null,
+      "nextDue": "2026-11-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-ceiling-fans",
+      "title": "Clean ceiling fans and check direction",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "Dusty blades throw dust around the room and can make a fan wobble. The seasonal direction change is a real comfort and efficiency gain.",
+      "steps": [
+        "Wipe blades top and bottom (an old pillowcase slipped over each blade catches the dust).",
+        "Tighten the blade screws and the canopy -- wobble is usually just loose screws.",
+        "Summer: blades should turn COUNTER-CLOCKWISE, pushing air down.",
+        "Winter: CLOCKWISE on low, pulling air up.",
+        "Confirm the light kit bulbs work."
+      ],
+      "source": "Standard ceiling fan maintenance.",
+      "requires": null,
+      "nextDue": "2026-11-21",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-toilets",
+      "title": "Inspect toilets for running and rocking",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 90
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 25,
+      "estCost": 10,
+      "why": "A silently running flapper wastes up to 200 gallons a day and shows up on your water bill before you ever hear it. A toilet that rocks will break its wax ring and leak into the subfloor.",
+      "steps": [
+        "Put a few drops of food coloring in each tank; wait 15 minutes without flushing.",
+        "If color appears in the bowl, the flapper is leaking -- replace it (a $8 part).",
+        "Grip the bowl and try to rock it -- it should be solid. If it moves, the closet bolts need tightening or the wax ring is failing.",
+        "Confirm the fill valve shuts off cleanly and the water stops below the overflow tube."
+      ],
+      "source": "Standard plumbing maintenance / water conservation guidance.",
+      "requires": null,
+      "nextDue": "2026-11-21",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-seasonal-adjust",
+      "title": "Adjust Hunter controller seasonal schedule",
+      "category": "Irrigation & Lawn",
+      "equipment": "Hunter controller",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3,
+          6,
+          9,
+          12
+        ],
+        "day": 1
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "Florida's rainy season (roughly June-September) needs far less supplemental water than the March-May dry season. Hunter's Seasonal Adjust % lets you scale every program at once instead of reprogramming each zone.",
+      "steps": [
+        "Open the Hunter controller and find Seasonal Adjust (or Water Budget) %.",
+        "Dry season (Mar-May): 100-120%. Rainy season (Jun-Sep): 50-70%. Cool season (Oct-Feb): 40-60%.",
+        "Check your county/water-district day-of-week watering restrictions and match the program days.",
+        "Verify the start time is early morning (4-6am) to cut evaporation and fungus.",
+        "Use Hunter's free Run Time Calculator at hunterirrigation.com/tools/runtime to sanity-check run times."
+      ],
+      "source": "Hunter Industries: adjust watering schedules seasonally; Seasonal Adjust / Solar Sync features.",
+      "requires": "irrigation",
+      "nextDue": "2026-12-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "docs-homestead",
+      "title": "★ File Florida Homestead Exemption",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2027-01-15"
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 0,
+      "why": "The hard deadline is MARCH 1, 2027 for the 2027 tax year. Florida's homestead exemption takes up to $50,000 off your assessed value AND locks in the Save Our Homes 3% annual assessment cap. Missing it costs you real money every year and you cannot get it retroactively. File in January so a document problem doesn't run you past the deadline.",
+      "steps": [
+        "Go to your county Property Appraiser's website and find the homestead exemption application (most allow online filing).",
+        "You must have owned and occupied the home as your permanent residence as of January 1, 2027 -- you moved in July 2026, so you qualify.",
+        "Have ready: recorded deed or tax parcel number, Florida driver's license with THIS address, Florida vehicle registration, voter registration or declaration of domicile, and Social Security numbers for all owners.",
+        "If your driver's license still shows an old address, update it FIRST -- this is the usual reason applications get rejected.",
+        "Submit and save the confirmation.",
+        "Also ask about additional exemptions you may qualify for (veteran, senior, disability)."
+      ],
+      "source": "Florida Statute 196.011: homestead exemption filing deadline is March 1.",
+      "requires": null,
+      "nextDue": "2027-01-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-carpet-clean",
+      "title": "Deep clean carpets and rugs",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          1
+        ],
+        "day": 20
+      },
+      "priority": "low",
+      "diy": false,
+      "estMinutes": 180,
+      "estCost": 200,
+      "why": "Florida sand tracks in relentlessly and grinds carpet fibers. Annual extraction cleaning is what keeps carpet from looking five years old at year two -- and some carpet warranties require documented professional cleaning.",
+      "steps": [
+        "Check your carpet warranty -- many require professional hot-water extraction every 12-18 months to stay valid.",
+        "Hire a professional or rent an extractor.",
+        "Vacuum thoroughly first.",
+        "Keep receipts if the warranty requires proof.",
+        "Add walk-off mats at every exterior door to cut how much sand gets in."
+      ],
+      "source": "Carpet manufacturer warranty requirements.",
+      "requires": null,
+      "nextDue": "2027-01-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-icemaker",
+      "title": "Clean and inspect ice maker + water line",
+      "category": "Kitchen",
+      "equipment": "LG refrigerator",
+      "schedule": {
+        "type": "interval",
+        "days": 180
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 25,
+      "estCost": 0,
+      "why": "Ice absorbs freezer odors and the supply line's compression fitting is a classic slow-leak spot that ruins flooring behind the fridge before anyone notices.",
+      "steps": [
+        "Empty the ice bin, wash it with warm soapy water, dry completely.",
+        "Look behind the fridge at the water line shutoff and fitting for moisture or mineral crust.",
+        "Confirm the line isn't kinked or pinched by the fridge.",
+        "Discard the first full bin of ice after cleaning."
+      ],
+      "source": "LG appliance maintenance guidance.",
+      "requires": null,
+      "nextDue": "2027-01-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-flush-first",
+      "title": "First tank flush + anode rod inspection (6-month)",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "once",
+        "date": "2027-01-28"
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 40,
+      "why": "State Water Heaters explicitly calls for the FIRST drain, flush and anode inspection at six months, then annually. This one-time early check catches construction sediment and confirms the anode is protecting your tank.",
+      "steps": [
+        "Turn OFF power to the water heater at the breaker.",
+        "Shut the cold water supply valve on top of the heater.",
+        "Attach a hose to the drain valve and run it to a driveway or floor drain.",
+        "Open the drain valve and a hot tap upstairs to break the vacuum; drain fully.",
+        "Briefly reopen the cold supply to stir and flush remaining sediment; repeat until clear.",
+        "Unscrew and inspect the anode rod -- replace it if it's under ~1/2 inch thick or heavily crusted.",
+        "Close the drain, refill completely (hot tap runs steady with no air), THEN restore power."
+      ],
+      "source": "State Water Heaters manual: drain/flush tank and inspect anode rod after the first six months of operation.",
+      "requires": null,
+      "nextDue": "2027-01-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-controller-battery",
+      "title": "Replace Hunter controller backup battery",
+      "category": "Irrigation & Lawn",
+      "equipment": "Hunter controller",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          2
+        ],
+        "day": 1
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 6,
+      "why": "The 9V backup keeps your programs and clock through power outages. If it's dead when a storm knocks power out, you'll come back to a controller that has forgotten every schedule.",
+      "steps": [
+        "Open the Hunter controller's face panel.",
+        "Swap the 9V (or coin cell on newer models) backup battery.",
+        "Confirm the date and time are still correct afterward.",
+        "Photograph your program settings as a backup."
+      ],
+      "source": "Hunter controller manuals: replace backup battery annually.",
+      "requires": "irrigation",
+      "nextDue": "2027-02-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "filter-cartridge",
+      "title": "Replace whole-house filter cartridge",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 180
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 25,
+      "estCost": 35,
+      "why": "A spent sediment cartridge restricts flow to the whole house and can start shedding what it caught.",
+      "steps": [
+        "Shut the inlet valve and relieve pressure with the housing's red button.",
+        "Unscrew the housing with the supplied wrench, dump and rinse it.",
+        "Fit the new cartridge; lubricate the housing O-ring with silicone grease.",
+        "Reassemble, open the valve slowly, and check for leaks.",
+        "Write the date on the housing with a marker."
+      ],
+      "source": "Whole-house filter manufacturer guidance.",
+      "requires": "waterSoftener",
+      "nextDue": "2027-02-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "septic-inspect",
+      "title": "Septic system inspection",
+      "category": "Septic & Well",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          2
+        ],
+        "day": 10
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 60,
+      "estCost": 175,
+      "why": "An annual look at sludge and scum depth is what tells you when pumping is actually needed. A failed drain field is a five-figure repair, and it always announces itself first.",
+      "steps": [
+        "Have a licensed septic contractor measure sludge and scum layers.",
+        "Have them check baffles, the tank lid and the outlet filter.",
+        "Ask them to inspect the drain field for wet spots or odor.",
+        "Keep the report; it establishes your pumping interval."
+      ],
+      "source": "EPA / Florida DOH septic guidance: inspect annually.",
+      "requires": "septic",
+      "nextDue": "2027-02-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-fridge-water-filter",
+      "title": "Replace LG refrigerator water filter",
+      "category": "Kitchen",
+      "equipment": "LG refrigerator",
+      "schedule": {
+        "type": "interval",
+        "days": 180
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 45,
+      "why": "LG rates its fridge filters for roughly six months or 200 gallons. Past that the carbon is spent, flow drops, and the filter housing itself can start harboring bacteria.",
+      "steps": [
+        "Find your filter part number (inside the fridge compartment or in the manual) -- record it in notes.",
+        "Twist the old filter out (usually a quarter turn) and insert the new one.",
+        "Run 2-3 gallons through the dispenser to purge carbon fines and air.",
+        "Reset the filter indicator light (hold the filter/reset button ~3 seconds).",
+        "Toss the first couple of batches of ice."
+      ],
+      "source": "LG refrigerator maintenance guidance: replace water filter on a ~6 month cycle.",
+      "requires": null,
+      "nextDue": "2027-02-18",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-fridge-air-filter",
+      "title": "Replace LG refrigerator air filter",
+      "category": "Kitchen",
+      "equipment": "LG refrigerator",
+      "schedule": {
+        "type": "interval",
+        "days": 180
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 25,
+      "why": "Separate from the water filter. LG's Pure N Fresh style air filter is what keeps onion and leftovers smell from getting into everything else.",
+      "steps": [
+        "Locate the air filter cartridge on the rear interior wall of the fresh food compartment.",
+        "Pop the cover, swap the cartridge.",
+        "Reset the air filter indicator if your model has one."
+      ],
+      "source": "LG refrigerator maintenance guidance.",
+      "requires": null,
+      "nextDue": "2027-02-19",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-fridge-coils",
+      "title": "Clean refrigerator condenser coils",
+      "category": "Kitchen",
+      "equipment": "LG refrigerator",
+      "schedule": {
+        "type": "interval",
+        "days": 180
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "Dust-blanketed coils make the compressor run hot and long. LG recommends once or twice a year -- twice if you have pets. It's the single biggest thing you can do for fridge lifespan.",
+      "steps": [
+        "Unplug the refrigerator or kill its breaker.",
+        "Pull the unit out or remove the toe-kick grille at the bottom front.",
+        "Vacuum the coils and the fan with a brush attachment; a coil brush helps reach the back.",
+        "Vacuum the floor underneath too.",
+        "Slide it back, plug in, and confirm it's level."
+      ],
+      "source": "LG: clean condenser coils once or twice a year; every six months with pets.",
+      "requires": null,
+      "nextDue": "2027-02-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-pressure-wash",
+      "title": "Pressure wash driveway, walkways and exterior",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          2
+        ],
+        "day": 20
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 180,
+      "estCost": 60,
+      "why": "Florida humidity grows algae and mildew on every north-facing surface. Beyond looks, biological growth holds moisture against your finishes and makes concrete slick and dangerous.",
+      "steps": [
+        "Pressure wash driveway, sidewalk, lanai deck and any pavers.",
+        "Use LOW pressure plus a cleaning solution on stucco and painted surfaces -- high pressure damages them.",
+        "Treat mildew on the shaded north side with a bleach or oxygen-bleach solution.",
+        "Rinse plants beforehand and afterward so runoff doesn't burn them.",
+        "Never pressure wash the roof -- soft-wash only, and hire that out."
+      ],
+      "source": "Standard Florida exterior maintenance.",
+      "requires": null,
+      "nextDue": "2027-02-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pool-equipment-service",
+      "title": "Professional pool equipment service",
+      "category": "Pool & Spa",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3
+        ],
+        "day": 5
+      },
+      "priority": "normal",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 180,
+      "why": "An annual look at the pump, heater, salt cell and plumbing catches the small leaks and worn seals that turn into equipment-pad replacements.",
+      "steps": [
+        "Have the pump motor bearings, seals and impeller checked.",
+        "Have the salt cell inspected and cleaned if you have one.",
+        "Check the heater, valves and plumbing for leaks.",
+        "Confirm bonding and GFCI protection at the equipment pad."
+      ],
+      "source": "Pool equipment manufacturer guidance.",
+      "requires": "pool",
+      "nextDue": "2027-03-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "hvac-tuneup-spring",
+      "title": "Professional HVAC tune-up (cooling season)",
+      "category": "HVAC",
+      "equipment": "Goodman system",
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3
+        ],
+        "day": 10
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 150,
+      "why": "Goodman's 10-year parts warranty expects documented annual maintenance. A spring tune-up also catches a weak capacitor or low refrigerant before the first 95-degree week, which is exactly when every tech in the county is booked.",
+      "steps": [
+        "Call Natural Air Energy Saving Systems (your installer) -- ask if you're still under a free/discounted service plan.",
+        "Ask them to check refrigerant charge, capacitor, contactor, amp draw, coil condition and drain line.",
+        "Get the written service report -- attach or note the invoice number here.",
+        "File the report; you need it if you ever make a Goodman warranty claim."
+      ],
+      "source": "Goodman: professional tune-up at least once a year; twice a year for heat pumps.",
+      "requires": null,
+      "nextDue": "2027-03-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "well-water-test",
+      "title": "Annual well water quality test",
+      "category": "Septic & Well",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3
+        ],
+        "day": 15
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 90,
+      "why": "Private wells are not regulated or tested by anyone but you. Bacteria, nitrates and pH shift over time, and in Florida shallow aquifers respond quickly to surface conditions.",
+      "steps": [
+        "Order a test kit from your county health department or a certified lab.",
+        "Test at minimum for coliform bacteria, nitrates, pH and total dissolved solids.",
+        "Test after any flooding event regardless of schedule.",
+        "Keep results to track trends."
+      ],
+      "source": "EPA / Florida DOH private well guidance: test annually.",
+      "requires": "well",
+      "nextDue": "2027-03-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "well-pressure-tank",
+      "title": "Check well pressure tank and switch",
+      "category": "Septic & Well",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3
+        ],
+        "day": 20
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "A waterlogged pressure tank makes the pump short-cycle, which destroys the pump motor. You can hear it: the pump kicking on and off every few seconds while a tap runs.",
+      "steps": [
+        "Watch the pressure gauge while running water -- the pump should cycle slowly, not rapidly.",
+        "With the pump off and system drained, check the tank's air charge (2 psi below cut-in pressure).",
+        "Look for corrosion or leaks at the tank and the pressure switch.",
+        "Call a well contractor if it's short-cycling."
+      ],
+      "source": "Well system manufacturer guidance.",
+      "requires": "well",
+      "nextDue": "2027-03-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lawn-mulch",
+      "title": "Refresh mulch (keep 6 inches off the foundation)",
+      "category": "Irrigation & Lawn",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          3
+        ],
+        "day": 20
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 120,
+      "estCost": 120,
+      "why": "Mulch piled against the slab is a termite bridge -- it lets them cross your treated soil barrier undetected. Florida inspectors call the required gap the 'dead zone'.",
+      "steps": [
+        "Rake back old mulch and top up to 2-3 inches deep.",
+        "Pull mulch back to leave a bare 6-inch gap against the foundation and siding.",
+        "Keep mulch away from AC lineset penetrations and hose bibs.",
+        "Consider rock instead of wood mulch within 12 inches of the house."
+      ],
+      "source": "Florida termite guidance: keep a 6-inch mulch-free 'dead zone' against the structure.",
+      "requires": null,
+      "nextDue": "2027-03-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "irr-backflow-test",
+      "title": "Backflow preventer inspection / certification",
+      "category": "Irrigation & Lawn",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4
+        ],
+        "day": 1
+      },
+      "priority": "normal",
+      "diy": false,
+      "estMinutes": 30,
+      "estCost": 80,
+      "why": "The backflow device stops fertilizer and lawn chemicals from siphoning back into your drinking water. Most Florida utilities require a certified annual test and will fine you or shut off service if you skip it.",
+      "steps": [
+        "Check whether your city/utility sends an annual backflow test notice -- many do.",
+        "Hire a licensed backflow tester (usually $60-100).",
+        "Make sure they file the certification with the utility.",
+        "Keep a copy."
+      ],
+      "source": "Typical Florida municipal cross-connection control requirement.",
+      "requires": "irrigation",
+      "nextDue": "2027-04-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lanai-hardware",
+      "title": "Check lanai frame anchors and fasteners",
+      "category": "Lanai & Screens",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4
+        ],
+        "day": 8
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 15,
+      "why": "The cage is anchored to the slab and often to the house. In salt air and Florida rain the screws corrode, and a cage with failing anchors is the first thing to go in a hurricane.",
+      "steps": [
+        "Inspect the anchor bolts where the frame meets the slab for rust or lifting.",
+        "Check the fasteners where the cage attaches to the house.",
+        "Look for bent or separated frame members.",
+        "Replace corroded screws with stainless.",
+        "Report structural issues to the builder if you're still in warranty."
+      ],
+      "source": "Florida screen enclosure / hurricane preparedness guidance.",
+      "requires": "screenedLanai",
+      "nextDue": "2027-04-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lawn-tree-trim",
+      "title": "Trim trees and branches back from the house",
+      "category": "Irrigation & Lawn",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4
+        ],
+        "day": 15
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 120,
+      "estCost": 250,
+      "why": "Do this BEFORE hurricane season, not during it. Overhanging limbs become roof-puncturing projectiles, and branches touching the house are a highway for ants, rats and roof damage.",
+      "steps": [
+        "Cut back anything overhanging the roof by at least 6 feet.",
+        "Remove dead or weakly attached limbs.",
+        "Keep all vegetation at least 3 feet off siding, soffits and the AC condenser.",
+        "Hire an arborist for anything you'd need a ladder plus a saw for."
+      ],
+      "source": "Florida hurricane-preparedness standard guidance: trim before June 1.",
+      "requires": null,
+      "nextDue": "2027-04-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-soffit-vents",
+      "title": "Check soffit and roof vents for blockage",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4
+        ],
+        "day": 20
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 0,
+      "why": "Your attic ventilation is what keeps Florida heat and moisture from cooking your roof deck and shingles from underneath. Blocked soffit vents also drive up your cooling bill.",
+      "steps": [
+        "Walk the perimeter and look up at the soffit vents.",
+        "Clear wasp nests, spider webs, dirt and paint over-spray.",
+        "From inside the attic, confirm insulation hasn't been pushed over the soffit vents at the eaves.",
+        "Confirm the ridge or off-ridge vents are clear."
+      ],
+      "source": "Standard attic ventilation maintenance.",
+      "requires": null,
+      "nextDue": "2027-04-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "storm-shutters-test",
+      "title": "Test hurricane shutters or impact windows",
+      "category": "Storm & Hurricane",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          4
+        ],
+        "day": 25
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 20,
+      "why": "The standard Florida advice is to confirm your shutters operate now, not when a storm is 48 hours out and every hardware store within 60 miles is sold out.",
+      "steps": [
+        "Locate all panels/shutters and confirm none are missing.",
+        "Dry-fit at least a few panels; confirm every wingnut, bolt and track is present and not seized.",
+        "Lubricate accordion or roll-down tracks.",
+        "Label each panel with the window it fits if the builder didn't.",
+        "If you have impact glass instead, confirm you have the certification paperwork for your insurance discount."
+      ],
+      "source": "Florida hurricane preparedness guidance: test shutters before season, not during.",
+      "requires": null,
+      "nextDue": "2027-04-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-micro-charcoal",
+      "title": "Replace Samsung microwave charcoal filter",
+      "category": "Kitchen",
+      "equipment": "Samsung microwave",
+      "schedule": {
+        "type": "interval",
+        "days": 270
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 30,
+      "why": "Only applies if your over-the-range microwave RECIRCULATES rather than venting outside. Samsung says every 6-12 months; the charcoal can't be washed and reused.",
+      "steps": [
+        "First confirm the unit recirculates -- if it's ducted outside, you can disable this task in Settings.",
+        "Open the grille at the top front of the microwave (usually two screws).",
+        "Slide the old charcoal cartridge out and the new one in.",
+        "Reinstall the grille."
+      ],
+      "source": "Samsung: replace the charcoal filter every 6 to 12 months, more often if needed.",
+      "requires": null,
+      "nextDue": "2027-05-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "storm-generator",
+      "title": "Service portable generator",
+      "category": "Storm & Hurricane",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5
+        ],
+        "day": 10
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 40,
+      "why": "Only relevant if you own one. Ethanol fuel gums up carburetors within months, and a generator that won't start is the most predictable disappointment in Florida.",
+      "steps": [
+        "Change the oil and the air filter.",
+        "Drain old fuel or run it dry; use fresh fuel with stabilizer.",
+        "Start it and run it under load for 20 minutes.",
+        "Confirm you have the right extension cords and a safe placement plan -- NEVER in the garage or near windows (carbon monoxide kills people every hurricane season).",
+        "If you don't own a generator, disable this task in Settings."
+      ],
+      "source": "Generator manufacturer maintenance guidance; CPSC CO safety warnings.",
+      "requires": null,
+      "nextDue": "2027-05-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "storm-season-prep",
+      "title": "Hurricane season preparation",
+      "category": "Storm & Hurricane",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5
+        ],
+        "day": 15
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 180,
+      "estCost": 250,
+      "why": "Atlantic hurricane season runs June 1 to November 30. The whole point of doing this in mid-May is that plywood, batteries, gas cans and generators are all available and reasonably priced, which stops being true the moment a cone points at Florida.",
+      "steps": [
+        "Test that every hurricane shutter or panel is present, fits, and that you have all the hardware. Do a dry fit now.",
+        "Restock the kit: 1 gallon of water per person per day for 7 days, non-perishable food, manual can opener, batteries, flashlights, NOAA weather radio, first aid, cash, phone power banks, pet supplies, prescriptions.",
+        "Fill propane tanks and confirm the generator (if any) starts and has fresh fuel and oil.",
+        "Confirm your evacuation zone and route on the county emergency management site.",
+        "Photograph or video every room and the exterior for insurance -- narrate what things are.",
+        "Put insurance policy, deed, IDs and this year's inspection reports in a waterproof folder or a cloud drive.",
+        "Identify what goes inside from the lanai and yard when a storm is coming."
+      ],
+      "source": "NOAA / FEMA / Florida Division of Emergency Management guidance; season is June 1 - Nov 30.",
+      "requires": null,
+      "nextDue": "2027-05-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "storm-inventory",
+      "title": "Update home inventory for insurance",
+      "category": "Storm & Hurricane",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5
+        ],
+        "day": 20
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "After a loss, the insurer asks you to prove what you owned. Almost nobody can. A 20-minute video walkthrough is the single highest-value insurance thing you can do.",
+      "steps": [
+        "Walk every room with your phone recording video, narrating items and rough values.",
+        "Open closets, cabinets and the garage.",
+        "Photograph serial numbers and model plates on all major appliances and the HVAC.",
+        "Photograph receipts for big-ticket items.",
+        "Store it in cloud storage, not just on the phone."
+      ],
+      "source": "Insurance industry standard loss-documentation guidance.",
+      "requires": null,
+      "nextDue": "2027-05-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "softener-service",
+      "title": "Clean brine tank and service softener",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          5
+        ],
+        "day": 25
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 30,
+      "why": "Sediment and salt mush accumulate in the bottom of the brine tank and eventually foul the injector, so the unit quietly stops softening.",
+      "steps": [
+        "Let the salt run low, then scoop out the remaining salt and sludge.",
+        "Wash the tank with soapy water and rinse.",
+        "Clean or replace the brine well screen and check the float.",
+        "Sanitize the resin bed per the manual.",
+        "Verify hardness with a test strip before and after."
+      ],
+      "source": "Water softener manufacturer guidance.",
+      "requires": "waterSoftener",
+      "nextDue": "2027-05-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "warranty-11month",
+      "title": "★ Schedule 11-month builder warranty inspection",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2027-05-28"
+      },
+      "priority": "critical",
+      "diy": false,
+      "estMinutes": 180,
+      "estCost": 400,
+      "why": "THE most important item in this entire app. Your builder's one-year workmanship warranty expires July 28, 2027. Hire an independent inspector around month 10 so you have time to document findings, submit the claim in writing, and give the builder a reasonable window to respond BEFORE the deadline. Anything found after that date is your money. A $400 inspection routinely finds thousands in covered defects.",
+      "steps": [
+        "Book a licensed home inspector with new-construction experience and thermal imaging -- do it in month 10, not month 12.",
+        "Ask specifically for thermal imaging and moisture meter readings.",
+        "Walk with them and take your own notes.",
+        "Also gather your own list beforehand: every sticking door, nail pop, drywall crack, grout gap, running toilet, loose fixture, bad caulk line, HVAC balance issue and drainage complaint you've noticed all year.",
+        "Get the written report with photos."
+      ],
+      "source": "Florida 11-month builder warranty inspection standard practice: schedule in month 10.",
+      "requires": null,
+      "nextDue": "2027-05-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "docs-insurance-review",
+      "title": "Review homeowners insurance policy",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          6
+        ],
+        "day": 1
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 0,
+      "why": "Florida's insurance market is volatile and dwelling replacement costs have moved a lot. Review before hurricane season, when you still have time to make changes -- most insurers freeze binding once a storm is in the box.",
+      "steps": [
+        "Confirm dwelling coverage still reflects current rebuild cost, not market value.",
+        "Check your hurricane/windstorm deductible -- it's usually a PERCENTAGE (2-5%) of dwelling coverage, not a flat amount. Know the dollar figure.",
+        "Confirm you have flood coverage or have made an informed decision not to -- standard policies never cover flood, and much of Florida floods outside mapped zones.",
+        "Verify personal property, loss of use and liability limits.",
+        "Confirm your wind mitigation credits are still applied.",
+        "Shop it against at least two other carriers."
+      ],
+      "source": "Florida insurance market guidance.",
+      "requires": null,
+      "nextDue": "2027-06-01",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-stucco-siding",
+      "title": "Inspect stucco / siding for cracks",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          6
+        ],
+        "day": 12
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Hairline stucco cracks are normal as a new house settles. Anything wider than a credit card edge, stair-stepping, or growing between inspections is worth flagging to the builder while you're under warranty.",
+      "steps": [
+        "Walk all four elevations in good light.",
+        "Photograph any crack next to a coin or ruler for scale, and date the photo.",
+        "Compare to last year's photos -- growth is what matters, not existence.",
+        "Look for bulging, soft spots or staining, which suggest moisture behind the finish.",
+        "Report anything significant to the builder in writing before your warranty ends."
+      ],
+      "source": "New-construction settling guidance.",
+      "requires": null,
+      "nextDue": "2027-06-12",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "warranty-punchlist",
+      "title": "★ Submit builder warranty punch list in writing",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2027-06-15"
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 120,
+      "estCost": 0,
+      "why": "Verbal requests to a builder are not enforceable. Everything goes through the warranty portal or email, dated, with photos. Submit well before July 28, 2027 and keep every confirmation.",
+      "steps": [
+        "Compile the inspector's report plus your own list into one document.",
+        "Submit through the builder's official warranty portal, or email with a read receipt.",
+        "Attach dated photos for every item.",
+        "Keep a copy of the submission and every response.",
+        "Follow up in writing every two weeks until items are resolved or formally denied.",
+        "If the builder stalls past the warranty date, the written, dated submission is what protects you."
+      ],
+      "source": "Florida builder warranty claim best practice: document everything in writing with dated photos.",
+      "requires": null,
+      "nextDue": "2027-06-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-nailpops",
+      "title": "Touch up drywall nail pops and settling cracks",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          6
+        ],
+        "day": 25
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 25,
+      "why": "Completely normal in the first two years as framing lumber dries and the house settles. Do a full pass right before your 11-month inspection so the builder fixes them on their dime.",
+      "steps": [
+        "Walk every room in raking light (a flashlight held flat against the wall reveals them).",
+        "Mark nail pops, corner bead cracks and drywall seam cracks with painter's tape.",
+        "Check above doors and windows and at ceiling corners -- the usual spots.",
+        "Before month 11: photograph and submit to the builder as warranty items.",
+        "After warranty: set the nail, spackle, sand, prime, touch up paint."
+      ],
+      "source": "New-construction settling; builder warranty best practice.",
+      "requires": null,
+      "nextDue": "2027-06-25",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pest-termite-bond",
+      "title": "Renew termite bond / soil treatment warranty",
+      "category": "Pest & Termite",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          7
+        ],
+        "day": 15
+      },
+      "priority": "critical",
+      "diy": false,
+      "estMinutes": 45,
+      "estCost": 175,
+      "why": "Your builder almost certainly had the soil pre-treated for termites, and that treatment came with a warranty that must be renewed -- usually annually, and usually starting at the one-year mark. If you let it lapse, reinstating it costs far more than the renewal. Formosan and subterranean termites are a genuine, expensive Florida threat.",
+      "steps": [
+        "Find the termite pre-treatment certificate in your closing documents -- it names the pest control company.",
+        "Call that company and confirm: what does the bond cover (damage repair, or re-treatment only)? When is renewal due? What does it cost?",
+        "Renew before the anniversary date.",
+        "If you can't find the certificate, call your builder's warranty department and ask for a copy.",
+        "Keep every renewal receipt -- continuous coverage is what matters."
+      ],
+      "source": "Florida new-construction soil pre-treatment warranties require annual renewal.",
+      "requires": null,
+      "nextDue": "2027-07-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "pest-termite-inspect",
+      "title": "Annual termite / WDO inspection",
+      "category": "Pest & Termite",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          7
+        ],
+        "day": 20
+      },
+      "priority": "critical",
+      "diy": false,
+      "estMinutes": 60,
+      "estCost": 100,
+      "why": "A Wood Destroying Organism inspection is what actually finds an active infestation. In Florida this is not optional maintenance -- it's the difference between a treatment and a structural repair.",
+      "steps": [
+        "Schedule a licensed WDO inspection (often included with your termite bond -- ask first).",
+        "Have them check the slab perimeter, attic, garage, lanai and any wood framing.",
+        "Get the written report.",
+        "Address any conducive conditions they flag (mulch contact, moisture, wood-to-ground contact)."
+      ],
+      "source": "Florida WDO inspection standard practice.",
+      "requires": null,
+      "nextDue": "2027-07-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "warranty-1yr-expire",
+      "title": "Builder 1-year workmanship warranty EXPIRES",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2027-07-28"
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "Milestone marker. After this date, cosmetic and workmanship defects -- drywall, paint, trim, tile, cabinets, flooring, most hardware -- become your expense.",
+      "steps": [
+        "Confirm every submitted warranty item has been resolved or has a written response.",
+        "Archive all warranty correspondence permanently.",
+        "Note that your 2-year systems and 10-year structural coverage continue."
+      ],
+      "source": "Standard builder warranty structure (1-year workmanship).",
+      "requires": null,
+      "nextDue": "2027-07-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-panel-check",
+      "title": "Inspect electrical panel",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 20,
+      "estCost": 0,
+      "why": "You're looking for heat damage and loose connections -- discoloration, a burnt plastic smell, or a breaker that feels warm. Do not remove the panel's inner cover.",
+      "steps": [
+        "Open the panel door (the outer door only -- leave the dead-front cover on).",
+        "Confirm every breaker is labeled clearly; fix the labels if the builder's are vague.",
+        "Look and smell for scorching or overheating.",
+        "Flip each breaker off and on once a year to keep the mechanism free.",
+        "Confirm the panel isn't being used as a shelf and has 3 feet of clear working space."
+      ],
+      "source": "Standard electrical safety maintenance.",
+      "requires": null,
+      "nextDue": "2027-08-04",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-flush-annual",
+      "title": "Drain and flush tank + inspect anode rod",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 40,
+      "why": "Sediment on the tank floor insulates the heating element, wastes electricity, makes rumbling noises, and shortens tank life. The sacrificial anode rod is the only thing standing between your water and a rusted-through tank.",
+      "steps": [
+        "Turn OFF power at the breaker and shut the cold supply valve.",
+        "Hose on the drain valve, open a hot tap to vent, drain the tank.",
+        "Flush with short bursts of cold supply until the water runs clear.",
+        "Remove and inspect the anode rod; replace if heavily consumed.",
+        "Refill completely before restoring power -- powering a dry element destroys it."
+      ],
+      "source": "State Water Heaters manual: drain, flush and inspect the anode rod at least annually.",
+      "requires": null,
+      "nextDue": "2027-08-07",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "storm-post-check",
+      "title": "Post-storm damage inspection",
+      "category": "Storm & Hurricane",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Run this after any named storm or severe weather event, not just once a year. Insurers care about prompt reporting, and hidden damage gets much more expensive with time.",
+      "steps": [
+        "Walk the full exterior perimeter with your phone camera.",
+        "Roof from the ground with binoculars: lifted shingles, displaced tiles, damaged vents.",
+        "Check the lanai screen, frame and anchors.",
+        "Check the AC condenser for debris, bent fins or shifting.",
+        "Check soffits, fascia, gutters and the fence.",
+        "Look in the attic for new water stains.",
+        "Photograph everything with dates before doing any cleanup, and report to insurance promptly."
+      ],
+      "source": "Florida post-storm / insurance claim guidance.",
+      "requires": null,
+      "nextDue": "2027-08-07",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-dryer-vent-pro",
+      "title": "Professional dryer exhaust vent cleaning",
+      "category": "Laundry",
+      "equipment": "LG dryer",
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 60,
+      "estCost": 140,
+      "why": "LG recommends an annual professional exhaust cleaning to get the hidden lint in the wall run that you can't reach. Dryer fires cause thousands of house fires a year and lint is the ignition source in most of them.",
+      "steps": [
+        "Hire a dryer vent cleaning service (often $100-180).",
+        "Ask them to clean the full run from dryer to the exterior hood and to verify airflow at the hood.",
+        "Ask them to confirm the duct material and length meet code.",
+        "Keep the receipt."
+      ],
+      "source": "LG dryer maintenance: schedule professional exhaust vent cleaning annually.",
+      "requires": null,
+      "nextDue": "2027-08-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-tp-valve",
+      "title": "Test T&P relief valve",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "critical",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "The temperature & pressure relief valve is the water heater's last line of defense against becoming a rocket. It can seize shut from mineral scale, and testing it once a year is how you know it hasn't.",
+      "steps": [
+        "Make sure the discharge pipe runs to a safe place (floor drain or outside).",
+        "Stand clear -- the water released is scalding hot.",
+        "Lift the valve's test lever for a second and let it snap back.",
+        "Water should gush out and stop cleanly when the lever closes.",
+        "If it dribbles afterward or nothing comes out, call a plumber to replace the valve."
+      ],
+      "source": "State Water Heaters manual: operate the T&P valve annually.",
+      "requires": null,
+      "nextDue": "2027-08-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-caulk-wet",
+      "title": "Re-caulk tubs, showers and sinks",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          8
+        ],
+        "day": 10
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 90,
+      "estCost": 15,
+      "why": "Failed caulk in a shower lets water into the wall cavity, and in Florida humidity that becomes mold fast. The corners and the tub-to-tile joint go first.",
+      "steps": [
+        "Inspect all wet-area caulk: tub/shower surrounds, tub-to-floor, sink backsplashes, toilet base.",
+        "Look for gaps, cracks, mildew staining or caulk pulling away.",
+        "Cut out failed caulk completely, clean with rubbing alcohol, dry fully.",
+        "Apply 100% silicone caulk rated for kitchen and bath (not latex) and tool it smooth.",
+        "Keep the shower dry for 24 hours."
+      ],
+      "source": "Standard wet-area maintenance; elevated priority in Florida humidity.",
+      "requires": null,
+      "nextDue": "2027-08-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-temp-check",
+      "title": "Verify water heater set to 120°F",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 15,
+      "estCost": 0,
+      "why": "120°F is the sweet spot: hot enough to suppress Legionella, cool enough to avoid scalding kids, and every 10 degrees lower cuts standby energy loss.",
+      "steps": [
+        "Run the kitchen hot tap for 2 minutes and measure with a cooking thermometer.",
+        "If it's above 125°F or below 115°F, kill power at the breaker and adjust both upper and lower thermostats behind the access panels.",
+        "Recheck after a few hours."
+      ],
+      "source": "DOE / manufacturer standard recommendation.",
+      "requires": null,
+      "nextDue": "2027-08-10",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "samsung-oven-seal",
+      "title": "Check oven door seal and calibration",
+      "category": "Kitchen",
+      "equipment": "Samsung range",
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 40,
+      "estCost": 15,
+      "why": "A crushed door gasket leaks heat, wastes energy and bakes unevenly. A miscalibrated oven quietly ruins baking and is a five-minute fix in the settings menu.",
+      "steps": [
+        "Inspect the braided door gasket for gaps, tears or flattened sections.",
+        "Put an oven thermometer on the center rack, set to 350°F, wait 20 minutes past preheat, and read it.",
+        "If it's off by more than 15°F, use the oven's temperature adjustment setting to calibrate.",
+        "Recheck."
+      ],
+      "source": "Samsung range care guidance.",
+      "requires": null,
+      "nextDue": "2027-08-15",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "range-hood-vent",
+      "title": "Verify kitchen exhaust actually vents",
+      "category": "Kitchen",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 10,
+      "estCost": 0,
+      "why": "Worth confirming once a year: Florida humidity plus a recirculating hood means cooking moisture stays in the house, which feeds mold.",
+      "steps": [
+        "Run the vent on high and hold a tissue to the intake -- it should hold.",
+        "Go outside and confirm air is coming out of the exterior hood, if ducted.",
+        "Clear the exterior hood of debris and nests."
+      ],
+      "source": "Standard kitchen ventilation check.",
+      "requires": null,
+      "nextDue": "2027-08-19",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "int-grout",
+      "title": "Inspect and seal tile grout",
+      "category": "Interior",
+      "equipment": null,
+      "schedule": {
+        "type": "fixed",
+        "months": [
+          8
+        ],
+        "day": 20
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 120,
+      "estCost": 30,
+      "why": "Unsealed grout absorbs water and stains, and in showers it's the path to the substrate. Sealing is cheap and takes an afternoon.",
+      "steps": [
+        "Test whether grout needs sealing: drop water on it -- if it darkens and soaks in, it needs sealer.",
+        "Clean grout thoroughly and let it dry 24 hours.",
+        "Apply penetrating grout sealer with an applicator bottle; wipe excess off the tile before it hazes.",
+        "Repair any cracked or missing grout first.",
+        "Prioritize showers and the kitchen floor."
+      ],
+      "source": "Standard tile maintenance.",
+      "requires": null,
+      "nextDue": "2027-08-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "plumb-valves-exercise",
+      "title": "Exercise all shutoff valves",
+      "category": "Plumbing",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 365
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 45,
+      "estCost": 0,
+      "why": "Valves that never move seize open. You find out the day you need one, and then a small leak becomes a whole-house shutoff and an emergency plumber.",
+      "steps": [
+        "Work through every fixture: under each sink, behind each toilet, at the washer, at the water heater.",
+        "Close each valve fully, then reopen fully, then back off a quarter turn.",
+        "Note any that are stiff, weep, or won't seat -- those need replacing.",
+        "Finish with the main shutoff."
+      ],
+      "source": "Standard plumbing preventive maintenance.",
+      "requires": null,
+      "nextDue": "2027-08-21",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "warranty-2yr-expire",
+      "title": "Builder 2-year systems warranty EXPIRES",
+      "category": "Warranty & Documents",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2028-07-28"
+      },
+      "priority": "high",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 0,
+      "why": "Your plumbing, electrical, HVAC ductwork and mechanical systems coverage typically ends at two years. Worth doing a focused systems check a couple of months beforehand.",
+      "steps": [
+        "Two months before this date, test every system deliberately: water pressure at all fixtures, all outlets and switches, HVAC airflow at every register, all drains.",
+        "Submit anything found in writing before the deadline."
+      ],
+      "source": "Standard builder warranty structure (2-year systems).",
+      "requires": null,
+      "nextDue": "2028-07-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "septic-pump",
+      "title": "Pump septic tank",
+      "category": "Septic & Well",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 1095
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 120,
+      "estCost": 450,
+      "why": "Every 3-5 years for a typical household. Skipping it lets solids reach the drain field, which is the part you cannot cheaply replace.",
+      "steps": [
+        "Schedule a licensed pumper.",
+        "Have them clean the outlet filter while the tank is open.",
+        "Keep the receipt -- some counties require records.",
+        "Don't drive or park over the tank or drain field, ever."
+      ],
+      "source": "EPA guidance: pump every 3-5 years for typical household use.",
+      "requires": "septic",
+      "nextDue": "2029-08-06",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "wh-tp-inspect",
+      "title": "Full T&P valve inspection / replacement",
+      "category": "Water Heater",
+      "equipment": "State water heater",
+      "schedule": {
+        "type": "interval",
+        "days": 1095
+      },
+      "priority": "high",
+      "diy": false,
+      "estMinutes": 45,
+      "estCost": 120,
+      "why": "Beyond the annual lever test, the valve itself should be inspected on a 2-4 year cycle per the label on the valve. Florida's mineral content is hard on them.",
+      "steps": [
+        "Read the maintenance interval printed on the T&P valve's own label -- it governs.",
+        "Have a plumber inspect or replace the valve if it's weeping, corroded, or past its labeled interval."
+      ],
+      "source": "State Water Heaters manual: inspect the T&P valve every 2-4 years; follow the valve's own label.",
+      "requires": null,
+      "nextDue": "2029-08-08",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-roof-pro",
+      "title": "Professional roof inspection",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 1095
+      },
+      "priority": "normal",
+      "diy": false,
+      "estMinutes": 90,
+      "estCost": 200,
+      "why": "Your roof is new, so this is about documentation as much as condition. Many Florida insurers now want a recent roof inspection, and having a baseline report helps enormously with any future claim.",
+      "steps": [
+        "Hire a licensed roofing contractor or home inspector.",
+        "Ask for a written report with photos.",
+        "Ask them to check the sealant at all penetrations and the condition of vent boots.",
+        "File the report with your insurance documents."
+      ],
+      "source": "Florida insurance and roofing industry practice.",
+      "requires": null,
+      "nextDue": "2029-08-11",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-driveway-seal",
+      "title": "Seal driveway or pavers",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 1095
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 240,
+      "estCost": 350,
+      "why": "Sealing keeps oil stains from soaking in, stops paver sand from washing out, and slows the fading that Florida sun causes. Not urgent on a new driveway, hence the 3-year cycle.",
+      "steps": [
+        "Pressure wash and let dry fully (48 hours).",
+        "Re-sand paver joints with polymeric sand if applicable.",
+        "Apply sealer per label; watch the weather -- you need a dry window.",
+        "Keep cars off for the full cure time."
+      ],
+      "source": "Standard concrete/paver maintenance.",
+      "requires": null,
+      "nextDue": "2029-08-20",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "lg-washer-hoses-replace",
+      "title": "Replace washer fill hoses",
+      "category": "Laundry",
+      "equipment": "LG washer",
+      "schedule": {
+        "type": "interval",
+        "days": 1825
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 30,
+      "why": "Even good braided hoses are consumables. Five years is the widely used replacement interval regardless of how they look.",
+      "steps": [
+        "Shut both supply valves and unplug the washer.",
+        "Unscrew old hoses (have a towel ready).",
+        "Install new braided stainless hoses with fresh rubber washers.",
+        "Open valves slowly and check for drips at all four connections.",
+        "Write the install date on a piece of tape on the hose."
+      ],
+      "source": "Standard 5-year replacement interval for washer supply hoses.",
+      "requires": null,
+      "nextDue": "2031-08-02",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-extinguisher-replace",
+      "title": "Replace or service fire extinguishers",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 2190
+      },
+      "priority": "low",
+      "diy": true,
+      "estMinutes": 30,
+      "estCost": 60,
+      "why": "Disposable household extinguishers are generally considered good for about 6-12 years. If yours are the non-rechargeable type, replacement is cheaper than servicing.",
+      "steps": [
+        "Check the manufacture date stamped on the cylinder or label.",
+        "Replace disposable units at ~6 years; have rechargeable units professionally serviced.",
+        "Dispose of old units properly -- many fire departments accept them."
+      ],
+      "source": "NFPA 10 maintenance intervals.",
+      "requires": null,
+      "nextDue": "2032-08-05",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "ext-repaint",
+      "title": "Repaint or reseal exterior",
+      "category": "Exterior & Roof",
+      "equipment": null,
+      "schedule": {
+        "type": "interval",
+        "days": 2555
+      },
+      "priority": "low",
+      "diy": false,
+      "estMinutes": 240,
+      "estCost": 5000,
+      "why": "Florida UV and driving rain are brutal on exterior finishes. Seven years is a realistic repaint interval here, and the paint film is a big part of your water barrier.",
+      "steps": [
+        "Get 3 quotes; ask about pressure washing, caulk replacement and primer on bare spots.",
+        "Confirm they'll use a quality elastomeric or acrylic rated for Florida.",
+        "Keep the color codes and the leftover paint for touch-ups."
+      ],
+      "source": "Florida exterior finish lifespan guidance.",
+      "requires": null,
+      "nextDue": "2033-08-18",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    },
+    {
+      "id": "safety-smoke-replace",
+      "title": "Replace smoke/CO alarms (10-year life)",
+      "category": "Electrical & Safety",
+      "equipment": null,
+      "schedule": {
+        "type": "once",
+        "date": "2036-07-28"
+      },
+      "priority": "normal",
+      "diy": true,
+      "estMinutes": 60,
+      "estCost": 200,
+      "why": "Smoke alarm sensors degrade and every manufacturer sets a hard 10-year expiration from the date of manufacture, not from installation. Yours are new, so this is a long way out -- but it's scheduled so it doesn't get forgotten.",
+      "steps": [
+        "Check the manufacture date printed on the back of each alarm.",
+        "Replace every unit that is 10 years past its manufacture date.",
+        "Replace CO alarms per their own (usually 7-10 year) rating."
+      ],
+      "source": "NFPA 72: replace smoke alarms 10 years from date of manufacture.",
+      "requires": null,
+      "nextDue": "2036-07-28",
+      "lastCompleted": null,
+      "enabled": true,
+      "notes": "",
+      "timesCompleted": 0
+    }
+  ]
+}

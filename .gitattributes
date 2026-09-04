@@ -1,0 +1,5 @@
+# Normalize to LF in the repository. The reminder workflow's `run:` block is
+# executed by bash on Linux, and CRLF there produces "$'\r': command not found".
+* text=auto eol=lf
+
+*.png binary

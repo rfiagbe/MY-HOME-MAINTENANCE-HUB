@@ -1,0 +1,46 @@
+name: Maintenance reminders
+
+on:
+  schedule:
+    # 12:00 UTC = 8am Eastern (daylight) / 7am Eastern (standard).
+    # GitHub's scheduler can lag by a few minutes under load; that's normal.
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print the email instead of sending it"
+        type: boolean
+        default: false
+      force:
+        description: "Send even if nothing is due"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reminders
+  cancel-in-progress: false
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send reminders
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REMINDER_TO: ${{ secrets.REMINDER_TO }}
+          TIMEZONE: America/New_York
+        run: |
+          ARGS=""
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.force }}"   = "true" ]; then ARGS="$ARGS --force"; fi
+          python scripts/send_reminders.py $ARGS
