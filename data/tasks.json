@@ -463,7 +463,7 @@
       "requires": null,
       "nextDue": "2026-09-14",
       "lastCompleted": null,
-      "enabled": true,
+      "enabled": false,
       "notes": "",
       "timesCompleted": 0
     },
