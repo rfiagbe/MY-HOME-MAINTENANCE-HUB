@@ -1,7 +1,7 @@
 /* Service worker: cache the shell so the app opens instantly and works
    offline, but never cache the data files — those must always be fresh. */
 
-const SHELL = "hmh-shell-v4";
+const SHELL = "hmh-shell-v5";
 const SHELL_FILES = [
   "./",
   "./index.html",
@@ -30,6 +30,35 @@ self.addEventListener("activate", (e) => {
   );
 });
 
+/* Network first, cache as offline fallback. */
+function networkFirst(req) {
+  return fetch(req)
+    .then((res) => {
+      if (res && res.ok) {
+        const copy = res.clone();
+        caches.open(SHELL).then((c) => c.put(req, copy)).catch(() => {});
+      }
+      return res;
+    })
+    .catch(() => caches.match(req).then((hit) => hit || caches.match("./index.html")));
+}
+
+/* Cache first, refresh in the background. */
+function cacheFirst(req) {
+  return caches.match(req).then((hit) => {
+    const net = fetch(req)
+      .then((res) => {
+        if (res && res.ok) {
+          const copy = res.clone();
+          caches.open(SHELL).then((c) => c.put(req, copy)).catch(() => {});
+        }
+        return res;
+      })
+      .catch(() => hit);
+    return hit || net;
+  });
+}
+
 self.addEventListener("fetch", (e) => {
   const req = e.request;
   if (req.method !== "GET") return;
@@ -39,33 +68,20 @@ self.addEventListener("fetch", (e) => {
   // Never intercept the GitHub API or anything cross-origin.
   if (url.origin !== self.location.origin) return;
 
-  // Data files: network first, fall back to cache only if offline.
-  if (url.pathname.includes("/data/")) {
-    e.respondWith(
-      fetch(req)
-        .then((res) => {
-          const copy = res.clone();
-          caches.open(SHELL).then((c) => c.put(req, copy)).catch(() => {});
-          return res;
-        })
-        .catch(() => caches.match(req))
-    );
+  /* HTML, CSS and JS go network first. Serving these from cache meant a deploy
+     didn't show up until the second launch, and worse, a cached index.html
+     could be paired with a freshly fetched app.js — different generations of
+     the same app, which breaks as soon as one adds an element the other
+     doesn't know about. They must move together, so they come from the
+     network whenever it's reachable. */
+  if (req.mode === "navigate" ||
+      url.pathname.includes("/data/") ||
+      /\.(?:html|css|js|webmanifest)$/.test(url.pathname) ||
+      url.pathname.endsWith("/")) {
+    e.respondWith(networkFirst(req));
     return;
   }
 
-  // Shell: cache first, refresh in the background.
-  e.respondWith(
-    caches.match(req).then((hit) => {
-      const net = fetch(req)
-        .then((res) => {
-          if (res && res.ok) {
-            const copy = res.clone();
-            caches.open(SHELL).then((c) => c.put(req, copy)).catch(() => {});
-          }
-          return res;
-        })
-        .catch(() => hit);
-      return hit || net;
-    })
-  );
+  // Photos, icons: big and effectively immutable, so cache first is right.
+  e.respondWith(cacheFirst(req));
 });
