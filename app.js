@@ -452,6 +452,27 @@
     return { cls: "chip", text: fmtShort(task.nextDue) };
   }
 
+  const CAT_ICON = {
+    "HVAC": "❄️",
+    "Water Heater": "🔥",
+    "Plumbing": "🚰",
+    "Electrical & Safety": "⚡",
+    "Kitchen": "🍳",
+    "Laundry": "🧺",
+    "Irrigation & Lawn": "🌱",
+    "Exterior & Roof": "🏠",
+    "Lanai & Screens": "🪟",
+    "Pest & Termite": "🐜",
+    "Storm & Hurricane": "🌀",
+    "Warranty & Documents": "📋",
+    "Interior": "🛋️",
+    "Pool & Spa": "🏊",
+    "Septic & Well": "💧"
+  };
+  function catLabel(c) {
+    return (CAT_ICON[c] ? CAT_ICON[c] + " " : "") + c;
+  }
+
   function taskCard(task, today) {
     const card = el("div", "card p-" + (task.priority || "normal"));
     if (!isActive(task)) card.classList.add("is-off");
@@ -467,7 +488,7 @@
     } else {
       meta.appendChild(el("span", dc.cls, dc.text));
     }
-    meta.appendChild(el("span", "chip", task.category));
+    meta.appendChild(el("span", "chip", catLabel(task.category)));
     meta.appendChild(el("span", "chip", scheduleLabel(task)));
     if (task.diy === false) meta.appendChild(el("span", "chip chip-pro", "Hire a pro"));
     if (!isActive(task)) meta.appendChild(el("span", "chip", "Disabled"));
@@ -857,7 +878,7 @@
       const dc = dueChip(t, today);
       chips.push([dc.cls, dc.text]);
     }
-    chips.push(["chip", t.category]);
+    chips.push(["chip", catLabel(t.category)]);
     chips.push(["chip", scheduleLabel(t)]);
     if (t.diy === false) chips.push(["chip chip-pro", "Hire a pro"]);
     if (t.priority === "critical") chips.push(["chip chip-due-over", "Critical"]);
@@ -1232,6 +1253,12 @@
     } else {
       $("#homeSub").textContent = "";
     }
+    /* Null-guarded: during a service-worker update the cached index.html can
+       briefly be older than app.js, and a hard crash here would blank the app. */
+    const hTitle = $("#heroTitle");
+    const hSub = $("#heroSub");
+    if (hTitle) hTitle.textContent = home.nickname || "Our home";
+    if (hSub) hSub.textContent = $("#homeSub").textContent;
     fillCategoryFilters();
     renderCurrent();
   }

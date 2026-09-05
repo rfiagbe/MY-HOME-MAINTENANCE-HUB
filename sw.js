@@ -1,13 +1,14 @@
 /* Service worker: cache the shell so the app opens instantly and works
    offline, but never cache the data files — those must always be fresh. */
 
-const SHELL = "hmh-shell-v3";
+const SHELL = "hmh-shell-v4";
 const SHELL_FILES = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
+  "./home_photo.jpg",
   "./icon-192.png",
   "./icon-512.png"
 ];
