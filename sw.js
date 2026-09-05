@@ -1,12 +1,15 @@
 /* Service worker: cache the shell so the app opens instantly and works
    offline, but never cache the data files — those must always be fresh. */
 
-const SHELL = "hmh-shell-v5";
+const SHELL = "hmh-shell-v6";
+
+/* CSS and JS are deliberately absent: they carry a ?v= stamp in index.html, so
+   listing them here would pin a stale filename. They're cached on first fetch
+   by networkFirst below, which keeps offline working without the two lists
+   ever drifting apart. */
 const SHELL_FILES = [
   "./",
   "./index.html",
-  "./styles.css",
-  "./app.js",
   "./manifest.webmanifest",
   "./home_photo.jpg",
   "./icon-192.png",

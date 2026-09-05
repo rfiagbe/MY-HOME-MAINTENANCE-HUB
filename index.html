@@ -15,7 +15,11 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Home Hub">
-<link rel="stylesheet" href="./styles.css">
+<!-- The ?v= stamp is deliberate. index.html is served network-first, so bumping
+     this string is what guarantees a new stylesheet or script actually reaches
+     a device instead of sitting behind an HTTP cache. Bump it on every CSS/JS
+     change. -->
+<link rel="stylesheet" href="./styles.css?v=20260905b">
 </head>
 <body>
 
@@ -292,6 +296,6 @@
 
 <div id="toast" class="toast hidden"></div>
 
-<script src="./app.js"></script>
+<script src="./app.js?v=20260905b"></script>
 </body>
 </html>

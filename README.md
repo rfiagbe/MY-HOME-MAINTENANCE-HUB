@@ -69,6 +69,13 @@ scripts/make_icons.py     regenerates the app icons
 .github/workflows/deploy.yml     publishes the site to GitHub Pages
 ```
 
+## After editing CSS or JS
+
+Bump the `?v=` stamp on both `styles.css` and `app.js` in `index.html`. Phones cache
+aggressively, and without a new filename a change can sit invisible behind the HTTP cache
+even though it deployed correctly. `index.html` itself is served network-first, so the new
+stamp always gets through.
+
 ## Adding or changing tasks
 
 Two ways:
