@@ -120,6 +120,8 @@
     dirty: false
   };
 
+  let lastLoad = 0;       // epoch ms of the last successful read, for refresh-on-focus
+
   function cfg() {
     return {
       repo: (localStorage.getItem(LS.repo) || "").trim(),
@@ -207,6 +209,7 @@
         state.history = h.doc || { version: 1, entries: [] };
         state.sha.history = h.sha;
         state.connected = true;
+        lastLoad = Date.now();
         cacheLocally();
         setSync("ok", "Synced");
         return;
@@ -241,6 +244,78 @@
     } catch (e) { /* quota — not fatal */ }
   }
 
+  /* Mark a task (or the home settings) as changed on this device, so a merge
+     can tell which side is newer. Without this, two devices editing different
+     tasks would clobber each other. */
+  function touch(task) {
+    task.updatedAt = new Date().toISOString();
+  }
+  function touchHome() {
+    state.tasks.home.updatedAt = new Date().toISOString();
+  }
+
+  /* Union of both sides' entries. History is append-only with unique ids, so
+     nothing ever has to be thrown away. */
+  function mergeHistory(remote, local) {
+    const seen = new Set();
+    const all = [];
+    (remote.entries || []).concat(local.entries || []).forEach((e) => {
+      if (!e || !e.id || seen.has(e.id)) return;
+      seen.add(e.id);
+      all.push(e);
+    });
+    all.sort((a, b) =>
+      String(a.date).localeCompare(String(b.date)) ||
+      String(a.loggedAt || "").localeCompare(String(b.loggedAt || "")));
+    return { version: remote.version || local.version || 1, entries: all };
+  }
+
+  /* Per-task merge: the remote copy supplies the catalog (titles, steps,
+     schedules), and for each task the side with the newer updatedAt supplies
+     the mutable state. A task this device never touched keeps the other
+     device's completion instead of being overwritten. */
+  function mergeTasks(remote, local) {
+    const out = JSON.parse(JSON.stringify(remote));
+    const lmap = {};
+    (local.tasks || []).forEach((t) => { lmap[t.id] = t; });
+
+    out.tasks.forEach((rt) => {
+      const lt = lmap[rt.id];
+      if (!lt) return;
+      const lStamp = lt.updatedAt || "";
+      const rStamp = rt.updatedAt || "";
+      if (lStamp && lStamp >= rStamp) {
+        rt.nextDue = lt.nextDue;
+        rt.lastCompleted = lt.lastCompleted;
+        rt.enabled = lt.enabled;
+        rt.notes = lt.notes;
+        rt.timesCompleted = Math.max(lt.timesCompleted || 0, rt.timesCompleted || 0);
+        rt.updatedAt = lStamp;
+      }
+    });
+
+    const rids = new Set(out.tasks.map((t) => t.id));
+    (local.tasks || []).forEach((lt) => { if (!rids.has(lt.id)) out.tasks.push(lt); });
+
+    const lh = (local.home && local.home.updatedAt) || "";
+    const rh = (remote.home && remote.home.updatedAt) || "";
+    if (lh && lh >= rh) out.home = local.home;
+    return out;
+  }
+
+  async function mergeFromRemote() {
+    const [t, h] = await Promise.all([ghRead("data/tasks.json"), ghRead("data/history.json")]);
+    state.sha.tasks = t.sha;
+    state.sha.history = h.sha;
+    if (t.doc) state.tasks = mergeTasks(t.doc, state.tasks);
+    if (h.doc) state.history = mergeHistory(h.doc, state.history);
+  }
+
+  async function pushBoth(message) {
+    state.sha.tasks = await ghWrite("data/tasks.json", state.tasks, state.sha.tasks, message);
+    state.sha.history = await ghWrite("data/history.json", state.history, state.sha.history, message);
+  }
+
   async function saveAll(message) {
     cacheLocally();
     if (!state.connected) {
@@ -250,20 +325,20 @@
     }
     setSync("busy", "Saving");
     try {
-      state.sha.tasks = await ghWrite("data/tasks.json", state.tasks, state.sha.tasks, message);
-      state.sha.history = await ghWrite("data/history.json", state.history, state.sha.history, message);
+      await pushBoth(message);
+      lastLoad = Date.now();
       setSync("ok", "Saved");
       return true;
     } catch (e) {
-      // 409 = someone else (or another device) wrote first. Re-read and retry once.
+      // 409/422 = another device committed first. Merge its work in, then retry.
       if (e.status === 409 || e.status === 422) {
         try {
-          const [t, h] = await Promise.all([ghRead("data/tasks.json"), ghRead("data/history.json")]);
-          state.sha.tasks = t.sha;
-          state.sha.history = h.sha;
-          state.sha.tasks = await ghWrite("data/tasks.json", state.tasks, state.sha.tasks, message);
-          state.sha.history = await ghWrite("data/history.json", state.history, state.sha.history, message);
+          await mergeFromRemote();
+          await pushBoth(message);
+          cacheLocally();
+          lastLoad = Date.now();
           setSync("ok", "Saved");
+          renderCurrent();          // show whatever the other device had done
           return true;
         } catch (e2) {
           setSync("err", "Save failed");
@@ -835,6 +910,7 @@
     $("#sheetToggle").addEventListener("click", () => toggleTask(id));
     $("#sheetSaveNotes").addEventListener("click", async () => {
       t.notes = $("#sheetNotes").value;
+      touch(t);
       await saveAll("Update notes: " + t.title);
       toast("Notes saved");
     });
@@ -892,6 +968,7 @@
     t.lastCompleted = when;
     t.timesCompleted = (t.timesCompleted || 0) + 1;
     t.nextDue = nextDueAfter(t, when);
+    touch(t);
 
     state.history.entries.push({
       id: uid(),
@@ -917,6 +994,7 @@
     if (!t) return;
     const when = isoDay(todayDay());
     t.nextDue = nextDueAfter(t, when);
+    touch(t);
     state.history.entries.push({
       id: uid(), taskId: t.id, title: t.title, category: t.category,
       date: when, cost: 0, by: "", notes: "Skipped this cycle.",
@@ -934,6 +1012,7 @@
     const base = parseDay(t.nextDue) || todayDay();
     const from = base < todayDay() ? todayDay() : base;
     t.nextDue = isoDay(addDays(from, days));
+    touch(t);
     closeSheet();
     renderAll();
     await saveAll("Snooze: " + t.title);
@@ -944,6 +1023,7 @@
     const t = state.tasks.tasks.find(x => x.id === id);
     if (!t) return;
     t.enabled = t.enabled === false;
+    touch(t);
     closeSheet();
     renderAll();
     await saveAll((t.enabled ? "Enable: " : "Disable: ") + t.title);
@@ -992,6 +1072,7 @@
       inp.checked = !!feats[key];
       inp.addEventListener("change", async () => {
         state.tasks.home.features[key] = inp.checked;
+        touchHome();
         renderAll();
         await saveAll("Feature " + key + ": " + (inp.checked ? "on" : "off"));
       });
@@ -1075,6 +1156,7 @@
         return;
       }
       state.tasks.home.reminderEmail = v;
+      touchHome();
       setStatus("#emailStatus", "busy", "Saving…");
       const ok = await saveAll("Update reminder email");
       setStatus("#emailStatus", ok ? "ok" : "err",
@@ -1084,6 +1166,7 @@
 
     $("#btnSaveNotes").addEventListener("click", async () => {
       state.tasks.home.notes = $("#cfgNotes").value;
+      touchHome();
       setStatus("#notesStatus", "busy", "Saving…");
       const ok = await saveAll("Update home notes");
       setStatus("#notesStatus", ok ? "ok" : "err", ok ? "Saved." : "Saved on this device only.");
@@ -1182,6 +1265,18 @@
     $("#doneConfirm").addEventListener("click", confirmDone);
     $("#doneDate").addEventListener("change", updateDonePreview);
 
+    /* Coming back to the app on one device should show what you did on another.
+       Skipped while a dialog is open so a refresh can't wipe a half-filled form. */
+    document.addEventListener("visibilitychange", async () => {
+      if (document.visibilityState !== "visible") return;
+      if (!state.connected) return;
+      if (!$("#sheet").classList.contains("hidden")) return;
+      if (!$("#doneDlg").classList.contains("hidden")) return;
+      if (Date.now() - lastLoad < 30000) return;
+      await loadAll();
+      renderAll();
+    });
+
     bindSettings();
   }
 
@@ -1210,4 +1305,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", init);
+
+  // Exposed so the merge rules can be exercised from the console without
+  // needing two real devices. Not used by the app itself.
+  window.__hmh = { mergeTasks, mergeHistory, state };
 })();

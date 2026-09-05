@@ -1630,12 +1630,15 @@ def main():
             task["enabled"] = prior.get("enabled", True)
             task["notes"] = prior.get("notes", "")
             task["timesCompleted"] = prior.get("timesCompleted", 0)
+            # updatedAt drives the app's multi-device merge -- never reset it
+            task["updatedAt"] = prior.get("updatedAt")
         else:
             task["nextDue"] = first_due(t["schedule"], i)
             task["lastCompleted"] = None
             task["enabled"] = True
             task["notes"] = ""
             task["timesCompleted"] = 0
+            task["updatedAt"] = None
         out_tasks.append(task)
 
     out_tasks.sort(key=lambda x: (x["nextDue"], x["title"]))

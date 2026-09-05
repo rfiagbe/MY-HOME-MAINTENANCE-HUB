@@ -103,8 +103,21 @@ repos, your account settings, or anything else.
 4. Tap **Save & connect**. The pill in the top-right should turn green and read **Synced**.
 5. Tap **Test connection** to confirm it reports write access.
 
-Now every check-off commits straight to `data/` in the repo. Do this once on your phone and
-once on your laptop and both stay in sync.
+Now every check-off commits straight to `data/` in the repo.
+
+### 3c. Using more than one device
+
+Repeat 3a and 3b on each device. A token isn't tied to a device, so one token *would* work
+everywhere — but **make a separate token per device** and name them accordingly
+(`Home Hub — Phone`, `Home Hub — PC`). Revocation is the reason: lose the phone, revoke that
+one token, and everything else keeps working. With a shared token you'd have to revoke it
+everywhere and re-paste on every device.
+
+Devices don't overwrite each other. Every change is stamped with the time it was made, and
+when two devices have both written, the app merges them: completion history is unioned, and
+for each individual task whichever side was edited more recently wins. Checking off different
+tasks on your phone and your PC keeps both. The app also re-reads the repo whenever you
+switch back to it, so you see the other device's work without pressing anything.
 
 ---
 
