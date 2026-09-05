@@ -188,6 +188,10 @@ main { max-width: 900px; margin: 0 auto; padding: 14px; }
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   background: var(--surface-2);
+  /* width must be explicit: with aspect-ratio alone, max-height below would
+     drive the width back down from the ratio and leave the card short of the
+     content column. Width leads, height follows and is then capped. */
+  width: 100%;
   aspect-ratio: 16 / 9;
   max-height: 260px;
 }
