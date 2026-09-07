@@ -182,9 +182,9 @@
       "nextDue": "2026-09-06",
       "lastCompleted": null,
       "enabled": true,
-      "notes": "",
+      "notes": "Washer door cleaned ",
       "timesCompleted": 0,
-      "updatedAt": null
+      "updatedAt": "2026-09-07T23:51:40.810Z"
     },
     {
       "id": "garage-door-safety",
