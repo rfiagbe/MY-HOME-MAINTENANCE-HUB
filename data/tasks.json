@@ -211,9 +211,9 @@
       "nextDue": "2026-09-07",
       "lastCompleted": null,
       "enabled": true,
-      "notes": "",
+      "notes": "Garage door reversal working properly ",
       "timesCompleted": 0,
-      "updatedAt": null
+      "updatedAt": "2026-09-07T23:57:10.583Z"
     },
     {
       "id": "lg-dryer-lint",
