@@ -24,6 +24,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-07T23:51:45.802Z"
+    },
+    {
+      "id": "mtrwh8xr8fghrw",
+      "taskId": "garage-door-safety",
+      "title": "Test garage door auto-reverse safety",
+      "category": "Electrical & Safety",
+      "date": "2026-09-07",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-07T23:57:17.055Z"
     }
   ]
 }
