@@ -48,6 +48,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-10T02:38:20.515Z"
+    },
+    {
+      "id": "mtuy36eerch29f",
+      "taskId": "lg-dryer-lint",
+      "title": "Clean dryer lint trap",
+      "category": "Laundry",
+      "date": "2026-09-09",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-10T03:05:38.342Z"
     }
   ]
 }
