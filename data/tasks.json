@@ -294,12 +294,12 @@
       ],
       "source": "Samsung: remove and clean the grease filter at least once per month.",
       "requires": null,
-      "nextDue": "2026-09-09",
-      "lastCompleted": null,
+      "nextDue": "2026-10-09",
+      "lastCompleted": "2026-09-09",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-10T03:05:47.924Z"
     },
     {
       "id": "lg-washer-hoses-check",
