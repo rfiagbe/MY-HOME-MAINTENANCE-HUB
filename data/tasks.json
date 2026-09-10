@@ -123,12 +123,12 @@
       ],
       "source": "Standard hard-water plumbing maintenance.",
       "requires": null,
-      "nextDue": "2026-09-05",
-      "lastCompleted": null,
+      "nextDue": "2027-03-05",
+      "lastCompleted": "2026-09-09",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-10T02:38:20.515Z"
     },
     {
       "id": "lg-dryer-sensor",
