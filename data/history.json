@@ -60,6 +60,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-10T03:05:38.342Z"
+    },
+    {
+      "id": "mtuy3dskd8fxif",
+      "taskId": "samsung-micro-grease",
+      "title": "Clean Samsung microwave grease filter",
+      "category": "Kitchen",
+      "date": "2026-09-09",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-10T03:05:47.924Z"
     }
   ]
 }
