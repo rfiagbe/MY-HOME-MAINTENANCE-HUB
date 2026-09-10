@@ -36,6 +36,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-07T23:57:17.055Z"
+    },
+    {
+      "id": "mtux42n78q7myk",
+      "taskId": "plumb-aerators",
+      "title": "Clean faucet aerators and showerheads",
+      "category": "Plumbing",
+      "date": "2026-09-09",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-10T02:38:20.515Z"
     }
   ]
 }
