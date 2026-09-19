@@ -108,6 +108,18 @@
       "notes": "Ling trap cleaned",
       "type": "completed",
       "loggedAt": "2026-09-19T02:06:55.638Z"
+    },
+    {
+      "id": "mu7r8gahrpfbdi",
+      "taskId": "warranty-appliances-register",
+      "title": "Register all appliance warranties",
+      "category": "Warranty & Documents",
+      "date": "2026-09-18",
+      "cost": 0,
+      "by": "me",
+      "notes": "Appliances registered",
+      "type": "completed",
+      "loggedAt": "2026-09-19T02:14:47.417Z"
     }
   ]
 }
