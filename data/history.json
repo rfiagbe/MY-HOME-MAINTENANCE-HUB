@@ -96,6 +96,18 @@
       "notes": "Microwave cleaned",
       "type": "completed",
       "loggedAt": "2026-09-19T02:04:29.518Z"
+    },
+    {
+      "id": "mu7qyc9iskx55s",
+      "taskId": "lg-dryer-lint",
+      "title": "Clean dryer lint trap",
+      "category": "Laundry",
+      "date": "2026-09-18",
+      "cost": 0,
+      "by": "me",
+      "notes": "Ling trap cleaned",
+      "type": "completed",
+      "loggedAt": "2026-09-19T02:06:55.638Z"
     }
   ]
 }
