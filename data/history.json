@@ -72,6 +72,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-10T03:05:47.924Z"
+    },
+    {
+      "id": "mu7qfkio9gu99q",
+      "taskId": "lg-washer-hoses-check",
+      "title": "Inspect washer fill hoses",
+      "category": "Laundry",
+      "date": "2026-09-18",
+      "cost": 0,
+      "by": "me",
+      "notes": "Water hoses checked. No fault detected.",
+      "type": "completed",
+      "loggedAt": "2026-09-19T01:52:19.872Z"
     }
   ]
 }
