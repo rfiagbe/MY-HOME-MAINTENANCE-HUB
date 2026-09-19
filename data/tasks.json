@@ -328,12 +328,12 @@
       ],
       "source": "Standard homeowner insurance loss-prevention guidance.",
       "requires": null,
-      "nextDue": "2026-09-10",
-      "lastCompleted": null,
+      "nextDue": "2027-03-10",
+      "lastCompleted": "2026-09-18",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-19T01:52:19.872Z"
     },
     {
       "id": "pool-chemistry",
