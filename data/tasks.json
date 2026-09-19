@@ -416,12 +416,12 @@
       ],
       "source": "Samsung: wipe with a soft cloth and warm soapy water; avoid sprays, abrasives and sharp objects on the panel.",
       "requires": null,
-      "nextDue": "2026-09-12",
-      "lastCompleted": null,
+      "nextDue": "2026-10-02",
+      "lastCompleted": "2026-09-18",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-19T02:04:29.518Z"
     },
     {
       "id": "plumb-main-shutoff",
