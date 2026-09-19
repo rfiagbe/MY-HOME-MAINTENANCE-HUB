@@ -84,6 +84,18 @@
       "notes": "Water hoses checked. No fault detected.",
       "type": "completed",
       "loggedAt": "2026-09-19T01:52:19.872Z"
+    },
+    {
+      "id": "mu7qv7imcjqz2a",
+      "taskId": "samsung-micro-interior",
+      "title": "Clean microwave interior and turntable",
+      "category": "Kitchen",
+      "date": "2026-09-18",
+      "cost": 0,
+      "by": "me",
+      "notes": "Microwave cleaned",
+      "type": "completed",
+      "loggedAt": "2026-09-19T02:04:29.518Z"
     }
   ]
 }
