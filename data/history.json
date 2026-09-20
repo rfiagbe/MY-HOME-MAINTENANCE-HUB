@@ -132,6 +132,18 @@
       "notes": "Cleaned",
       "type": "completed",
       "loggedAt": "2026-09-19T02:15:36.370Z"
+    },
+    {
+      "id": "mu9ybvcu686dkz",
+      "taskId": "hvac-register-warranty",
+      "title": "Register Goodman + Natural Air warranty",
+      "category": "HVAC",
+      "date": "2026-09-20",
+      "cost": 0,
+      "by": "me",
+      "notes": "Warranty registered",
+      "type": "completed",
+      "loggedAt": "2026-09-20T15:08:56.575Z"
     }
   ]
 }
