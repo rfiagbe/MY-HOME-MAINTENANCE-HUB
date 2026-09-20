@@ -144,6 +144,18 @@
       "notes": "Warranty registered",
       "type": "completed",
       "loggedAt": "2026-09-20T15:08:56.575Z"
+    },
+    {
+      "id": "mu9ydj8n8g0qt9",
+      "taskId": "docs-contractor-list",
+      "title": "Review and update trusted contractor list",
+      "category": "Warranty & Documents",
+      "date": "2026-09-20",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-20T15:10:14.183Z"
     }
   ]
 }
