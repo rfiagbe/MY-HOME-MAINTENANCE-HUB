@@ -156,6 +156,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-20T15:10:14.183Z"
+    },
+    {
+      "id": "mua7j9ndkzkpac",
+      "taskId": "hvac-filter",
+      "title": "Replace HVAC air filter",
+      "category": "HVAC",
+      "date": "2026-09-20",
+      "cost": 0,
+      "by": "me",
+      "notes": "Air filter changed",
+      "type": "completed",
+      "loggedAt": "2026-09-20T19:26:38.233Z"
     }
   ]
 }
