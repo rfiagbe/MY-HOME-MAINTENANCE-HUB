@@ -601,12 +601,12 @@
       ],
       "source": "Goodman: registration required within 60 days of installation for full warranty term.",
       "requires": null,
-      "nextDue": "2026-09-20",
-      "lastCompleted": null,
+      "nextDue": null,
+      "lastCompleted": "2026-09-20",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-20T15:08:56.574Z"
     },
     {
       "id": "docs-organize",
