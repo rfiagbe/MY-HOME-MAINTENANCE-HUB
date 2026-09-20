@@ -507,12 +507,12 @@
       ],
       "source": "Homeowner best practice.",
       "requires": null,
-      "nextDue": "2026-09-15",
-      "lastCompleted": null,
+      "nextDue": "2027-09-15",
+      "lastCompleted": "2026-09-20",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-20T15:10:14.183Z"
     },
     {
       "id": "warranty-appliances-register",
