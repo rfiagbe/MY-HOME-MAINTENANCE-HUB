@@ -665,12 +665,12 @@
       ],
       "source": "New-construction settling; standard hardware maintenance.",
       "requires": null,
-      "nextDue": "2026-09-25",
-      "lastCompleted": null,
+      "nextDue": "2027-09-25",
+      "lastCompleted": "2026-09-27",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-27T23:49:44.219Z"
     },
     {
       "id": "pest-mulch-check",
