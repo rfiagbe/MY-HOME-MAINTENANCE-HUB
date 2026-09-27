@@ -571,12 +571,12 @@
       ],
       "source": "Loss-prevention best practice.",
       "requires": null,
-      "nextDue": "2026-09-18",
-      "lastCompleted": null,
+      "nextDue": "2027-03-18",
+      "lastCompleted": "2026-09-27",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-27T23:48:35.781Z"
     },
     {
       "id": "hvac-register-warranty",
