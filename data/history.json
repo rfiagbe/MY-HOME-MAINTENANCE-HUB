@@ -216,6 +216,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-27T23:49:02.123Z"
+    },
+    {
+      "id": "mukh0kuz4fjqky",
+      "taskId": "int-doors-hardware",
+      "title": "Tighten and lubricate doors, hinges and cabinet hardware",
+      "category": "Interior",
+      "date": "2026-09-27",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-27T23:49:44.219Z"
     }
   ]
 }
