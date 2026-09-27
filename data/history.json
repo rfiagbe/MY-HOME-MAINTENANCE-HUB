@@ -204,6 +204,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-27T23:48:35.781Z"
+    },
+    {
+      "id": "mukgzodnsp4aeu",
+      "taskId": "hvac-condensate-flush",
+      "title": "Flush AC condensate drain line with vinegar",
+      "category": "HVAC",
+      "date": "2026-09-27",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-27T23:49:02.123Z"
     }
   ]
 }
