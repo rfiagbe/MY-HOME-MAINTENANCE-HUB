@@ -631,12 +631,12 @@
       ],
       "source": "Homeowner records best practice.",
       "requires": null,
-      "nextDue": "2026-09-25",
-      "lastCompleted": null,
+      "nextDue": null,
+      "lastCompleted": "2026-09-30",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-09-30T15:43:10.765Z"
     },
     {
       "id": "int-doors-hardware",
