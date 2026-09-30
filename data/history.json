@@ -228,6 +228,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-09-27T23:49:44.219Z"
+    },
+    {
+      "id": "muo9yf1punah60",
+      "taskId": "docs-organize",
+      "title": "Organize home documents and manuals",
+      "category": "Warranty & Documents",
+      "date": "2026-09-30",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-09-30T15:43:10.765Z"
     }
   ]
 }
