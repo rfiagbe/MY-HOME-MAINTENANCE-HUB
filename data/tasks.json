@@ -760,12 +760,12 @@
       ],
       "source": "LG washer maintenance: perform maintenance on each section roughly monthly.",
       "requires": null,
-      "nextDue": "2026-09-28",
-      "lastCompleted": null,
+      "nextDue": "2026-11-02",
+      "lastCompleted": "2026-10-03",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-04T03:50:25.490Z"
     },
     {
       "id": "lg-washer-dispenser",
