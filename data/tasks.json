@@ -909,12 +909,12 @@
       ],
       "source": "Standard dishwasher manufacturer guidance.",
       "requires": "dishwasher",
-      "nextDue": "2026-10-01",
-      "lastCompleted": null,
+      "nextDue": "2026-11-02",
+      "lastCompleted": "2026-10-03",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-04T03:26:40.544Z"
     },
     {
       "id": "lawn-fertilize",
