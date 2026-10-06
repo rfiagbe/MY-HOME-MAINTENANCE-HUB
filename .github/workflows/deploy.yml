@@ -4,6 +4,13 @@ on:
   push:
     branches: [main]
     paths-ignore:
+      # Every check-off in the app commits data/tasks.json and data/history.json
+      # separately, which used to fire two deploys per tap. GitHub keeps only one
+      # queued deploy per concurrency group and cancels the one it replaces, so
+      # quick check-offs produced "All jobs were cancelled" emails. The app reads
+      # live data through the GitHub API (or raw.githubusercontent.com when no
+      # token is set), never the deployed copy, so data commits don't need one.
+      - "data/**"
       - "README.md"
       - "SETUP.md"
   workflow_dispatch:
@@ -24,6 +31,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 

@@ -187,13 +187,36 @@
   // ---------------------------------------------------------------
   // Load / save
   // ---------------------------------------------------------------
+  /* Read-only load for a device with no token and no cached copy.
+     Data commits no longer redeploy the site, so the copy bundled with the
+     page can be days old. The public raw file is current to within a few
+     minutes, so prefer it; the bundled copy is the offline last resort. */
   async function loadLocal() {
     const bust = "?t=" + Date.now();
-    const [t, h] = await Promise.all([
-      fetch("./data/tasks.json" + bust, { cache: "no-store" }).then(r => r.json()),
-      fetch("./data/history.json" + bust, { cache: "no-store" }).then(r => r.json()).catch(() => ({ version: 1, entries: [] }))
-    ]);
-    return { tasks: t, history: h };
+    const c = cfg();
+    const repo = c.repo || guessRepoFromUrl();
+    const bases = [];
+    if (repo) bases.push("https://raw.githubusercontent.com/" + repo + "/" + encodeURIComponent(c.branch) + "/data/");
+    bases.push("./data/");
+
+    let lastErr = null;
+    for (const base of bases) {
+      try {
+        const [t, h] = await Promise.all([
+          fetch(base + "tasks.json" + bust, { cache: "no-store" }).then(r => {
+            if (!r.ok) throw new Error("HTTP " + r.status);
+            return r.json();
+          }),
+          fetch(base + "history.json" + bust, { cache: "no-store" })
+            .then(r => (r.ok ? r.json() : { version: 1, entries: [] }))
+            .catch(() => ({ version: 1, entries: [] }))
+        ]);
+        return { tasks: t, history: h };
+      } catch (e) {
+        lastErr = e;
+      }
+    }
+    throw lastErr || new Error("No data source reachable");
   }
 
   async function loadAll() {
@@ -1270,11 +1293,17 @@
     $$(".tab").forEach(t => t.addEventListener("click", () => switchView(t.dataset.view)));
 
     $("#btnRefresh").addEventListener("click", async (e) => {
-      e.currentTarget.classList.add("spin");
-      await loadAll();
-      renderAll();
-      e.currentTarget.classList.remove("spin");
-      toast("Reloaded");
+      // Capture the button now: e.currentTarget is null once the await below
+      // yields, which used to throw and leave the icon spinning forever.
+      const btn = e.currentTarget;
+      btn.classList.add("spin");
+      try {
+        await loadAll();
+        renderAll();
+        toast("Reloaded");
+      } finally {
+        btn.classList.remove("spin");
+      }
     });
 
     ["#taskSearch", "#catFilter", "#stateFilter"].forEach(s =>
