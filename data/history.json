@@ -312,6 +312,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-06T01:43:05.023Z"
+    },
+    {
+      "id": "muw0p1zlj83fj6",
+      "taskId": "lg-washer-dispenser",
+      "title": "Clean washer detergent dispenser drawer",
+      "category": "Laundry",
+      "date": "2026-10-05",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-06T01:46:06.801Z"
     }
   ]
 }
