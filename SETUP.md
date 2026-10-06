@@ -67,9 +67,14 @@ logs, not to anyone with read access to the repo.
 If it fails, open the run's log. `Username and Password not accepted` almost always means
 2-Step Verification isn't on, or the app password was mistyped.
 
-**From then on it runs by itself, every day at 8am Eastern.** You'll get an email when
-something is due in 7 days, when something is due that day, and a Monday digest if anything
-has slipped. Quiet days send nothing.
+**From then on it runs by itself, every morning.** You'll get an email when something is
+due in 7 days, when something is due that day, and a Monday digest if anything has slipped.
+Quiet days send nothing.
+
+It's scheduled for 6:23am Eastern, but GitHub treats scheduled jobs as best-effort and often
+starts them late, so expect it sometime in the morning rather than at an exact minute. A
+backup run at 11:47am catches days when the first one never starts (for example during a
+GitHub outage) and stays silent if the morning run already went out, so you never get two.
 
 ---
 

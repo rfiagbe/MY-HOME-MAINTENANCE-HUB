@@ -2,9 +2,15 @@ name: Maintenance reminders
 
 on:
   schedule:
-    # 12:00 UTC = 8am Eastern (daylight) / 7am Eastern (standard).
-    # GitHub's scheduler can lag by a few minutes under load; that's normal.
-    - cron: "0 12 * * *"
+    # Deliberately NOT on the hour. GitHub's scheduler is most overloaded at :00,
+    # and the old "0 12 * * *" slot started a median of ~4 hours late.
+    #
+    # Two slots. Scheduled runs are best-effort -- during the Oct 5, 2026 Actions
+    # incident the only run of the day was never picked up and that day's email
+    # was lost. The second slot is a backup: --once-per-day makes it exit quietly
+    # if the first already succeeded, so a normal day still sends one email.
+    - cron: "23 10 * * *"   # primary: 6:23am EDT / 5:23am EST
+    - cron: "47 15 * * *"   # backup: 11:47am EDT / 10:47am EST
   workflow_dispatch:
     inputs:
       dry_run:
@@ -18,7 +24,9 @@ on:
 
 permissions:
   contents: read
+  actions: read   # lets the backup run see whether today's reminder already went out
 
+# Serialize the two slots, so if both land at once the second sees the first's result.
 concurrency:
   group: reminders
   cancel-in-progress: false
@@ -26,21 +34,24 @@ concurrency:
 jobs:
   remind:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
+      # No setup-python: the script is standard library only, and the runner's
+      # own python3 removes a dependency that tends to lag behind new runner
+      # images (ubuntu-latest becomes Ubuntu 26 from Oct 19, 2026).
       - name: Send reminders
         env:
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           REMINDER_TO: ${{ secrets.REMINDER_TO }}
+          GITHUB_TOKEN: ${{ github.token }}
           TIMEZONE: America/New_York
         run: |
+          python3 --version
           ARGS=""
+          if [ "${{ github.event_name }}" = "schedule" ]; then ARGS="$ARGS --once-per-day"; fi
           if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "${{ inputs.force }}"   = "true" ]; then ARGS="$ARGS --force"; fi
-          python scripts/send_reminders.py $ARGS
+          python3 scripts/send_reminders.py $ARGS

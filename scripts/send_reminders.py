@@ -17,17 +17,22 @@ Environment:
   GMAIL_APP_PASSWORD  16-char Google app password              (required)
   REMINDER_TO         Override recipient (default: tasks.json) (optional)
   GITHUB_REPOSITORY   owner/repo, set automatically by Actions (optional)
+  GITHUB_TOKEN        Actions token, for --once-per-day        (optional)
+  GITHUB_RUN_ID       this run's id, set automatically         (optional)
   TIMEZONE            IANA zone, default America/New_York      (optional)
 
 Flags:
-  --dry-run   print the email to stdout instead of sending
-  --force     send even if there is nothing due
+  --dry-run       print the email to stdout instead of sending
+  --force         send even if there is nothing due
+  --once-per-day  exit quietly if another scheduled run already succeeded
+                  today; lets a backup schedule retry without double-sending
 """
 
 import json
 import os
 import smtplib
 import sys
+import urllib.request
 from datetime import date, datetime, timedelta
 from email.message import EmailMessage
 from email.utils import formataddr
@@ -51,14 +56,58 @@ PRIORITY_ORDER = {"critical": 0, "high": 1, "normal": 2, "low": 3}
 # --------------------------------------------------------------------------
 # Helpers
 # --------------------------------------------------------------------------
-def local_today():
+def local_tz():
     tzname = os.environ.get("TIMEZONE", "America/New_York")
     if ZoneInfo is not None:
         try:
-            return datetime.now(ZoneInfo(tzname)).date()
+            return ZoneInfo(tzname)
         except Exception:
             pass
-    return date.today()
+    return None
+
+
+def local_today():
+    tz = local_tz()
+    return datetime.now(tz).date() if tz else date.today()
+
+
+def already_sent_today(today):
+    """True if a different scheduled run of this workflow already succeeded today.
+
+    Fails open: if the API can't be reached, return False and send anyway.
+    A duplicate email is a much smaller problem than a missed reminder.
+    """
+    token = os.environ.get("GITHUB_TOKEN")
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    run_id = str(os.environ.get("GITHUB_RUN_ID", ""))
+    if not (token and repo):
+        return False
+
+    url = ("https://api.github.com/repos/{}/actions/workflows/reminders.yml/runs"
+           "?event=schedule&status=success&per_page=20").format(repo)
+    req = urllib.request.Request(url, headers={
+        "Authorization": "Bearer " + token,
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = json.load(resp)
+    except Exception as e:
+        print("::warning::Couldn't check earlier runs ({}); sending anyway.".format(e))
+        return False
+
+    tz = local_tz()
+    for r in data.get("workflow_runs", []):
+        if str(r.get("id")) == run_id:
+            continue
+        stamp = r.get("run_started_at") or r.get("created_at")
+        if not stamp:
+            continue
+        started = datetime.fromisoformat(stamp.replace("Z", "+00:00"))
+        if (started.astimezone(tz) if tz else started).date() == today:
+            return True
+    return False
 
 
 def parse_day(s):
@@ -237,8 +286,16 @@ def build_text(today, overdue, due_today, due_soon, url):
 # Main
 # --------------------------------------------------------------------------
 def main():
+    # Windows consoles and pipes default to cp1252, which can't encode the
+    # emoji in the subject line and would crash a local --dry-run.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
     dry = "--dry-run" in sys.argv
     force = "--force" in sys.argv
+    once = "--once-per-day" in sys.argv
 
     if not os.path.exists(TASKS_PATH):
         print("::error::data/tasks.json not found", file=sys.stderr)
@@ -250,6 +307,10 @@ def main():
     home = doc.get("home", {})
     features = home.get("features", {})
     today = local_today()
+
+    if once and already_sent_today(today):
+        print("Today's reminder already went out in an earlier run. Nothing to do. ({})".format(today.isoformat()))
+        return 0
 
     overdue, due_today, due_soon = [], [], []
     for t in doc.get("tasks", []):
