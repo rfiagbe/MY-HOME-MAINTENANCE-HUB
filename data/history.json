@@ -348,6 +348,18 @@
       "notes": "Main water shutoff located",
       "type": "completed",
       "loggedAt": "2026-10-08T12:41:28.864Z"
+    },
+    {
+      "id": "muzt7u0z8af09y",
+      "taskId": "garage-door-safety",
+      "title": "Test garage door auto-reverse safety",
+      "category": "Electrical & Safety",
+      "date": "2026-10-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-08T17:27:50.723Z"
     }
   ]
 }
