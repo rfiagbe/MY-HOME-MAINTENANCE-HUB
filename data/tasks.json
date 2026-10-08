@@ -208,12 +208,12 @@
       ],
       "source": "CPSC / garage door opener manufacturer guidance: test monthly.",
       "requires": "garage",
-      "nextDue": "2026-10-07",
-      "lastCompleted": "2026-09-07",
+      "nextDue": "2026-11-07",
+      "lastCompleted": "2026-10-08",
       "enabled": true,
       "notes": "Garage door reversal working properly ",
-      "timesCompleted": 1,
-      "updatedAt": "2026-09-07T23:57:17.055Z"
+      "timesCompleted": 2,
+      "updatedAt": "2026-10-08T17:27:50.722Z"
     },
     {
       "id": "lg-dryer-lint",
