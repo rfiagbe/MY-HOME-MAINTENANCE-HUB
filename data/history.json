@@ -336,6 +336,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-06T01:46:12.488Z"
+    },
+    {
+      "id": "muzizkf4tabe1c",
+      "taskId": "plumb-main-shutoff",
+      "title": "Locate and label the main water shutoff",
+      "category": "Plumbing",
+      "date": "2026-10-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "Main water shutoff located",
+      "type": "completed",
+      "loggedAt": "2026-10-08T12:41:28.864Z"
     }
   ]
 }
