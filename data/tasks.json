@@ -446,12 +446,12 @@
       ],
       "source": "Universal homeowner emergency-preparedness guidance.",
       "requires": null,
-      "nextDue": "2026-09-12",
-      "lastCompleted": null,
+      "nextDue": null,
+      "lastCompleted": "2026-10-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-08T12:41:28.864Z"
     },
     {
       "id": "samsung-cooktop-clean",
