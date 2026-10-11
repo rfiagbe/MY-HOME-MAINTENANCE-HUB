@@ -1138,12 +1138,12 @@
       ],
       "source": "Standard Florida screen enclosure maintenance.",
       "requires": "screenedLanai",
-      "nextDue": "2026-10-08",
-      "lastCompleted": null,
+      "nextDue": "2027-03-08",
+      "lastCompleted": "2026-10-11",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-11T13:35:43.433Z"
     },
     {
       "id": "int-humidity",
