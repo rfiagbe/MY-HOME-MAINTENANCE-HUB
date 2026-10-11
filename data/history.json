@@ -372,6 +372,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-11T13:35:06.645Z"
+    },
+    {
+      "id": "mv3v8vnttxm9w4",
+      "taskId": "lanai-screen-inspect",
+      "title": "Inspect lanai screen for tears and loose spline",
+      "category": "Lanai & Screens",
+      "date": "2026-10-11",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-11T13:35:43.433Z"
     }
   ]
 }
