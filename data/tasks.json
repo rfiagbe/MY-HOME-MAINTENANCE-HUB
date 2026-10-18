@@ -1167,12 +1167,12 @@
       ],
       "source": "Florida humidity/mold management guidance (target 45-55% RH).",
       "requires": null,
-      "nextDue": "2026-10-09",
-      "lastCompleted": null,
+      "nextDue": "2026-12-17",
+      "lastCompleted": "2026-10-18",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-18T17:58:52.045Z"
     },
     {
       "id": "hvac-tuneup-fall",
