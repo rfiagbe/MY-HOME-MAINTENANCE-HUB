@@ -408,6 +408,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-18T17:58:52.045Z"
+    },
+    {
+      "id": "mve4qpq7xdp2zo",
+      "taskId": "lg-dryer-sensor",
+      "title": "Wipe dryer moisture sensor strips",
+      "category": "Laundry",
+      "date": "2026-10-18",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-18T17:59:13.855Z"
     }
   ]
 }
