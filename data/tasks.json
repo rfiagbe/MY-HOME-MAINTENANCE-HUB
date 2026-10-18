@@ -151,12 +151,12 @@
       ],
       "source": "LG dryer maintenance: wipe moisture sensor strips with rubbing alcohol monthly.",
       "requires": null,
-      "nextDue": "2026-10-07",
-      "lastCompleted": "2026-09-07",
+      "nextDue": "2026-11-17",
+      "lastCompleted": "2026-10-18",
       "enabled": true,
       "notes": "Dryer sensor removed and cleaned ",
-      "timesCompleted": 1,
-      "updatedAt": "2026-09-07T23:51:07.530Z"
+      "timesCompleted": 2,
+      "updatedAt": "2026-10-18T17:59:13.855Z"
     },
     {
       "id": "lg-washer-gasket-wipe",
