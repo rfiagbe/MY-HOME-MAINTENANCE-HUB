@@ -1329,12 +1329,12 @@
       ],
       "source": "Florida humidity / mold prevention guidance.",
       "requires": null,
-      "nextDue": "2026-10-18",
-      "lastCompleted": null,
+      "nextDue": "2027-04-18",
+      "lastCompleted": "2026-10-25",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-10-25T23:29:38.956Z"
     },
     {
       "id": "irr-nozzle-clean",
