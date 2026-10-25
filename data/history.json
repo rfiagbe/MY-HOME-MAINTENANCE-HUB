@@ -456,6 +456,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-25T12:49:54.532Z"
+    },
+    {
+      "id": "mvogmljgr7960c",
+      "taskId": "int-bathfans",
+      "title": "Clean bathroom exhaust fans",
+      "category": "Interior",
+      "date": "2026-10-25",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-25T23:29:38.957Z"
     }
   ]
 }
