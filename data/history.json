@@ -468,6 +468,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-10-25T23:29:38.957Z"
+    },
+    {
+      "id": "mvogsdext5nocf",
+      "taskId": "plumb-hosebibs",
+      "title": "Inspect exterior hose bibs and check for leaks",
+      "category": "Plumbing",
+      "date": "2026-10-25",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-10-25T23:34:08.361Z"
     }
   ]
 }
