@@ -1294,12 +1294,12 @@
       ],
       "source": "Florida OIR uniform mitigation verification inspection (form OIR-B1-1802).",
       "requires": null,
-      "nextDue": "2026-10-15",
-      "lastCompleted": null,
+      "nextDue": null,
+      "lastCompleted": "2026-11-01",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-01T14:47:40.246Z"
     },
     {
       "id": "int-bathfans",
