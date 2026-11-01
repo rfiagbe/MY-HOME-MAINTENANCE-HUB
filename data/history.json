@@ -540,6 +540,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-01T14:37:24.255Z"
+    },
+    {
+      "id": "mvxy2ajbeya4wd",
+      "taskId": "docs-wind-mitigation",
+      "title": "Get wind mitigation inspection for insurance discount",
+      "category": "Warranty & Documents",
+      "date": "2026-11-01",
+      "cost": 0,
+      "by": "pro",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-01T14:47:40.247Z"
     }
   ]
 }
