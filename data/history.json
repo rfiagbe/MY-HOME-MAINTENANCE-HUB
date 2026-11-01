@@ -528,6 +528,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-01T14:36:28.541Z"
+    },
+    {
+      "id": "mvxxp38fxk2g8e",
+      "taskId": "int-dryer-area",
+      "title": "Check laundry room and garage for moisture and mildew",
+      "category": "Interior",
+      "date": "2026-11-01",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-01T14:37:24.255Z"
     }
   ]
 }
