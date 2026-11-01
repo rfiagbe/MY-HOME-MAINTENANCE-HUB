@@ -1232,12 +1232,12 @@
       ],
       "source": "Standard dryer vent maintenance.",
       "requires": null,
-      "nextDue": "2026-10-12",
-      "lastCompleted": null,
+      "nextDue": "2027-04-12",
+      "lastCompleted": "2026-11-01",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-01T13:57:38.838Z"
     },
     {
       "id": "fireplace-inspect",
