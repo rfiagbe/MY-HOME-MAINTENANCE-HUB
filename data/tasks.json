@@ -1581,12 +1581,12 @@
       ],
       "source": "Florida humidity/mold management guidance.",
       "requires": null,
-      "nextDue": "2026-10-29",
-      "lastCompleted": null,
+      "nextDue": "2027-01-30",
+      "lastCompleted": "2026-11-01",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-01T14:37:24.255Z"
     },
     {
       "id": "lg-washer-pumpfilter",
