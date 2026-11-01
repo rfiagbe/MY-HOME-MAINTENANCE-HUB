@@ -730,12 +730,12 @@
       ],
       "source": "Florida HVAC standard practice: monthly vinegar flush to prevent biological slime clogs.",
       "requires": null,
-      "nextDue": "2026-10-27",
-      "lastCompleted": "2026-09-27",
+      "nextDue": "2026-12-01",
+      "lastCompleted": "2026-11-01",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 1,
-      "updatedAt": "2026-09-27T23:49:02.123Z"
+      "timesCompleted": 2,
+      "updatedAt": "2026-11-01T13:44:13.044Z"
     },
     {
       "id": "lg-washer-tubclean",
