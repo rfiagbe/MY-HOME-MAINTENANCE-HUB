@@ -492,6 +492,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-01T13:44:13.044Z"
+    },
+    {
+      "id": "mvxw9ymumoq8v0",
+      "taskId": "dryer-vent-hood",
+      "title": "Check exterior dryer vent hood flap",
+      "category": "Laundry",
+      "date": "2026-11-01",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-01T13:57:38.838Z"
     }
   ]
 }
