@@ -552,6 +552,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-01T14:47:40.247Z"
+    },
+    {
+      "id": "mvyn48vtl5cfqo",
+      "taskId": "pest-entry-seal",
+      "title": "Seal pest entry points",
+      "category": "Pest & Termite",
+      "date": "2026-11-01",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-02T02:29:01.817Z"
     }
   ]
 }
