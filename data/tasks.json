@@ -1429,12 +1429,12 @@
       ],
       "source": "Standard pest exclusion practice.",
       "requires": null,
-      "nextDue": "2026-10-25",
-      "lastCompleted": null,
+      "nextDue": "2027-10-25",
+      "lastCompleted": "2026-11-01",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-02T02:29:01.817Z"
     },
     {
       "id": "plumb-washer-pan",
