@@ -564,6 +564,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-02T02:29:01.817Z"
+    },
+    {
+      "id": "mw301vwzqc8l9o",
+      "taskId": "safety-extinguisher",
+      "title": "Check fire extinguishers",
+      "category": "Electrical & Safety",
+      "date": "2026-11-04",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-05T03:42:11.413Z"
     }
   ]
 }
