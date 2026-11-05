@@ -1362,12 +1362,12 @@
       ],
       "source": "Hunter Industries homeowner guidance: keep sprinkler heads unclogged.",
       "requires": "irrigation",
-      "nextDue": "2026-10-20",
-      "lastCompleted": null,
+      "nextDue": "2027-04-20",
+      "lastCompleted": "2026-11-04",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-05T03:45:17.800Z"
     },
     {
       "id": "garage-door-lube",
