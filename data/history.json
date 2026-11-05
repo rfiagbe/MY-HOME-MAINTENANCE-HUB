@@ -588,6 +588,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-05T03:42:53.727Z"
+    },
+    {
+      "id": "mw302zug6l5kaw",
+      "taskId": "dishwasher-filter",
+      "title": "Clean dishwasher filter",
+      "category": "Kitchen",
+      "date": "2026-11-04",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-05T03:43:03.160Z"
     }
   ]
 }
