@@ -880,12 +880,12 @@
       ],
       "source": "NFPA 10 monthly visual inspection guidance (relaxed here to semi-annual for household units).",
       "requires": null,
-      "nextDue": "2026-10-01",
-      "lastCompleted": null,
+      "nextDue": "2027-04-01",
+      "lastCompleted": "2026-11-04",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-05T03:42:11.411Z"
     },
     {
       "id": "dishwasher-filter",
