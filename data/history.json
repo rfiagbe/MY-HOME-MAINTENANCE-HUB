@@ -576,6 +576,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-05T03:42:11.413Z"
+    },
+    {
+      "id": "mw302skfxdkmpu",
+      "taskId": "irr-rain-sensor",
+      "title": "Test and clean rain sensor",
+      "category": "Irrigation & Lawn",
+      "date": "2026-11-04",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-05T03:42:53.727Z"
     }
   ]
 }
