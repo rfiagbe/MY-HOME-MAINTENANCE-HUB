@@ -660,6 +660,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T14:22:30.172Z"
+    },
+    {
+      "id": "mw7xnk1gzrkzi6",
+      "taskId": "lanai-door-tracks",
+      "title": "Clean and lubricate sliding door tracks",
+      "category": "Lanai & Screens",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T14:33:54.484Z"
     }
   ]
 }
