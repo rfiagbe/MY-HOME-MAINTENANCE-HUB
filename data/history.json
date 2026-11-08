@@ -732,6 +732,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:52:16.011Z"
+    },
+    {
+      "id": "mw84qyrr5q43yi",
+      "taskId": "safety-smoke-battery",
+      "title": "Replace smoke alarm backup batteries",
+      "category": "Electrical & Safety",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:52:30.855Z"
     }
   ]
 }
