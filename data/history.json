@@ -684,6 +684,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:49:38.094Z"
+    },
+    {
+      "id": "mw84p0crv1npy9",
+      "taskId": "lg-washer-tubclean",
+      "title": "Run LG washer Tub Clean cycle",
+      "category": "Laundry",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:50:59.595Z"
     }
   ]
 }
