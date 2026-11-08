@@ -636,6 +636,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T14:12:56.790Z"
+    },
+    {
+      "id": "mw7x56h20el744",
+      "taskId": "plumb-washer-pan",
+      "title": "Check laundry drain pan and standpipe",
+      "category": "Plumbing",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T14:19:37.094Z"
     }
   ]
 }
