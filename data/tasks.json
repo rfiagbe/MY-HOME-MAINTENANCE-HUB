@@ -1396,12 +1396,12 @@
       ],
       "source": "Garage door manufacturer maintenance guidance.",
       "requires": "garage",
-      "nextDue": "2026-10-25",
-      "lastCompleted": null,
+      "nextDue": "2027-04-25",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T14:12:56.777Z"
     },
     {
       "id": "pest-entry-seal",
