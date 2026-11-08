@@ -696,6 +696,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:50:59.595Z"
+    },
+    {
+      "id": "mw84pdc8wbwvsm",
+      "taskId": "ext-roof-visual",
+      "title": "Visual roof inspection from the ground",
+      "category": "Exterior & Roof",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:51:16.424Z"
     }
   ]
 }
