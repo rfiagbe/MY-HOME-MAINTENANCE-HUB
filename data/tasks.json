@@ -1948,12 +1948,12 @@
       ],
       "source": "LG dryer maintenance: vacuum lint trap housing and check exhaust vent every 3 months.",
       "requires": null,
-      "nextDue": "2026-11-05",
-      "lastCompleted": null,
+      "nextDue": "2027-02-06",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T17:57:18.469Z"
     },
     {
       "id": "ext-drainage",
