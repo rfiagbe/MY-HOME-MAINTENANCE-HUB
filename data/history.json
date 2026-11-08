@@ -720,6 +720,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:52:01.400Z"
+    },
+    {
+      "id": "mw84qnbf0whtih",
+      "taskId": "disposal-clean",
+      "title": "Clean and deodorize garbage disposal",
+      "category": "Kitchen",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:52:16.011Z"
     }
   ]
 }
