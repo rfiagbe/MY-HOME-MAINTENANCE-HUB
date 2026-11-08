@@ -1918,12 +1918,12 @@
       ],
       "source": "NFPA / manufacturer standard.",
       "requires": null,
-      "nextDue": "2026-11-05",
-      "lastCompleted": null,
+      "nextDue": "2027-11-05",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T17:52:30.855Z"
     },
     {
       "id": "lg-dryer-housing-vac",
