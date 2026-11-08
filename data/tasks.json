@@ -1700,12 +1700,12 @@
       ],
       "source": "Manufacturer general guidance: annual battery replacement.",
       "requires": null,
-      "nextDue": "2026-11-01",
-      "lastCompleted": null,
+      "nextDue": "2027-11-01",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T17:58:41.090Z"
     },
     {
       "id": "safety-gfci-test",
