@@ -1517,12 +1517,12 @@
       ],
       "source": "Standard sliding door maintenance.",
       "requires": null,
-      "nextDue": "2026-10-27",
-      "lastCompleted": null,
+      "nextDue": "2027-02-06",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T14:33:54.484Z"
     },
     {
       "id": "ext-window-weeps",
