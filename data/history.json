@@ -648,6 +648,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T14:19:37.094Z"
+    },
+    {
+      "id": "mw7x8w0s0t6ypu",
+      "taskId": "lg-fridge-gaskets",
+      "title": "Clean door gaskets and test the seal",
+      "category": "Kitchen",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T14:22:30.172Z"
     }
   ]
 }
