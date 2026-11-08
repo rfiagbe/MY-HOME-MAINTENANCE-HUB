@@ -1886,12 +1886,12 @@
       ],
       "source": "Standard Florida roof maintenance; also do this after every named storm.",
       "requires": null,
-      "nextDue": "2026-11-03",
-      "lastCompleted": null,
+      "nextDue": "2027-05-03",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T17:51:16.424Z"
     },
     {
       "id": "safety-smoke-battery",
