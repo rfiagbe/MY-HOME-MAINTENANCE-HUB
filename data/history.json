@@ -804,6 +804,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:57:39.019Z"
+    },
+    {
+      "id": "mw84ywg2r83k6h",
+      "taskId": "hvac-thermostat-battery",
+      "title": "Replace thermostat batteries",
+      "category": "HVAC",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:58:41.090Z"
     }
   ]
 }
