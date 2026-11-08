@@ -1487,12 +1487,12 @@
       ],
       "source": "LG refrigerator maintenance guidance.",
       "requires": null,
-      "nextDue": "2026-10-26",
-      "lastCompleted": null,
+      "nextDue": "2027-02-06",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T14:22:30.172Z"
     },
     {
       "id": "lanai-door-tracks",
