@@ -780,6 +780,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:53:08.028Z"
+    },
+    {
+      "id": "mw84x4p17ed8kx",
+      "taskId": "lg-dryer-housing-vac",
+      "title": "Vacuum lint trap housing and check exhaust vent",
+      "category": "Laundry",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:57:18.469Z"
     }
   ]
 }
