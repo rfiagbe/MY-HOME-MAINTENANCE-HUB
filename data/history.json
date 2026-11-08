@@ -768,6 +768,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:52:44.032Z"
+    },
+    {
+      "id": "mw84rrgcrinrt2",
+      "taskId": "safety-exterior-outlets",
+      "title": "Check exterior outlet covers and lighting",
+      "category": "Electrical & Safety",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:53:08.028Z"
     }
   ]
 }
