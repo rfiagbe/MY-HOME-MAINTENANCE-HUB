@@ -756,6 +756,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:52:38.343Z"
+    },
+    {
+      "id": "mw84r8xsu97ne2",
+      "taskId": "lg-washer-gasket-wipe",
+      "title": "Wipe washer door gasket dry",
+      "category": "Laundry",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:52:44.032Z"
     }
   ]
 }
