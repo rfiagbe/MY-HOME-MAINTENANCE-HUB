@@ -624,6 +624,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T13:52:55.131Z"
+    },
+    {
+      "id": "mw7wwll5syxl42",
+      "taskId": "garage-door-lube",
+      "title": "Lubricate and inspect garage door hardware",
+      "category": "Electrical & Safety",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T14:12:56.790Z"
     }
   ]
 }
