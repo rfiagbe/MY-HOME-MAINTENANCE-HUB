@@ -672,6 +672,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T14:33:54.484Z"
+    },
+    {
+      "id": "mw84n9gtwrf2zz",
+      "taskId": "lg-washer-pumpfilter",
+      "title": "Clean washer drain pump filter",
+      "category": "Laundry",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:49:38.094Z"
     }
   ]
 }
