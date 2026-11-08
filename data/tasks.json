@@ -1611,12 +1611,12 @@
       ],
       "source": "LG front load washer maintenance guidance.",
       "requires": null,
-      "nextDue": "2026-10-30",
-      "lastCompleted": null,
+      "nextDue": "2027-02-06",
+      "lastCompleted": "2026-11-08",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-08T17:49:38.093Z"
     },
     {
       "id": "pest-quarterly",
