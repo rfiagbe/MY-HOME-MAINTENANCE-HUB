@@ -792,6 +792,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-08T17:57:18.469Z"
+    },
+    {
+      "id": "mw84xkjv3asu38",
+      "taskId": "safety-smoke-test",
+      "title": "Test all smoke and CO alarms",
+      "category": "Electrical & Safety",
+      "date": "2026-11-08",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-08T17:57:39.019Z"
     }
   ]
 }
