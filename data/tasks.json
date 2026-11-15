@@ -2231,12 +2231,12 @@
       ],
       "source": "Standard dishwasher manufacturer guidance.",
       "requires": "dishwasher",
-      "nextDue": "2026-11-15",
-      "lastCompleted": null,
+      "nextDue": "2027-02-13",
+      "lastCompleted": "2026-11-15",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-15T17:38:59.802Z"
     },
     {
       "id": "lawn-pest-check",
