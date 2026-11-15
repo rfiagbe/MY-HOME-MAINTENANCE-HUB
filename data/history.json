@@ -828,6 +828,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-15T17:38:49.356Z"
+    },
+    {
+      "id": "mwi4cjmi8o68nw",
+      "taskId": "dishwasher-clean-cycle",
+      "title": "Run dishwasher cleaner cycle",
+      "category": "Kitchen",
+      "date": "2026-11-15",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-15T17:38:59.802Z"
     }
   ]
 }
