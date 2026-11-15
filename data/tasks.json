@@ -179,12 +179,12 @@
       ],
       "source": "LG: wipe away visible water from drum, gasket and door glass; leave door open to reduce odor.",
       "requires": null,
-      "nextDue": "2026-11-15",
-      "lastCompleted": "2026-11-08",
+      "nextDue": "2026-11-22",
+      "lastCompleted": "2026-11-15",
       "enabled": true,
       "notes": "Washer door cleaned ",
-      "timesCompleted": 7,
-      "updatedAt": "2026-11-08T17:52:44.032Z"
+      "timesCompleted": 8,
+      "updatedAt": "2026-11-15T17:39:05.658Z"
     },
     {
       "id": "garage-door-safety",
