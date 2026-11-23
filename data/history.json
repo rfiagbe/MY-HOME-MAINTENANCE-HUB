@@ -852,6 +852,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-15T17:39:05.658Z"
+    },
+    {
+      "id": "mwslsh5wwrvj2z",
+      "taskId": "plumb-toilets",
+      "title": "Inspect toilets for running and rocking",
+      "category": "Plumbing",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:44:58.340Z"
     }
   ]
 }
