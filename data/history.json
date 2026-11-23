@@ -912,6 +912,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:46:59.525Z"
+    },
+    {
+      "id": "mwslvt8kuoqefu",
+      "taskId": "samsung-oven-deepclean",
+      "title": "Deep clean Samsung oven",
+      "category": "Kitchen",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:47:33.956Z"
     }
   ]
 }
