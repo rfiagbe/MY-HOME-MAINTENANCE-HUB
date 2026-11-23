@@ -948,6 +948,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:50:03.456Z"
+    },
+    {
+      "id": "mwslz493kjcd4f",
+      "taskId": "samsung-micro-interior",
+      "title": "Clean microwave interior and turntable",
+      "category": "Kitchen",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:50:08.199Z"
     }
   ]
 }
