@@ -876,6 +876,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:45:08.303Z"
+    },
+    {
+      "id": "mwsltwx234yloq",
+      "taskId": "plumb-leak-sweep",
+      "title": "Check under every sink and behind toilets for leaks",
+      "category": "Plumbing",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:46:05.414Z"
     }
   ]
 }
