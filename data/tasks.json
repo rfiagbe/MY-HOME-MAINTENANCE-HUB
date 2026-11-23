@@ -2170,12 +2170,12 @@
       ],
       "source": "Standard exterior envelope maintenance.",
       "requires": null,
-      "nextDue": "2026-11-12",
-      "lastCompleted": null,
+      "nextDue": "2027-11-12",
+      "lastCompleted": "2026-11-22",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-23T01:46:59.525Z"
     },
     {
       "id": "fireplace-damper",
