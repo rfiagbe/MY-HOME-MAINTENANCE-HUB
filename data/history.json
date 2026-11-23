@@ -864,6 +864,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:44:58.340Z"
+    },
+    {
+      "id": "mwslsounmo2ji2",
+      "taskId": "int-ceiling-fans",
+      "title": "Clean ceiling fans and check direction",
+      "category": "Interior",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:45:08.303Z"
     }
   ]
 }
