@@ -960,6 +960,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:50:08.199Z"
+    },
+    {
+      "id": "mwsm0e9svka9nl",
+      "taskId": "safety-gfci-test",
+      "title": "Test GFCI and AFCI outlets and breakers",
+      "category": "Electrical & Safety",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:51:07.840Z"
     }
   ]
 }
