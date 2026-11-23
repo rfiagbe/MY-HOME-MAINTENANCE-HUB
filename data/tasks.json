@@ -236,12 +236,12 @@
       ],
       "source": "LG dryer maintenance: clean the lint trap before or after each load.",
       "requires": null,
-      "nextDue": "2026-11-22",
-      "lastCompleted": "2026-11-15",
+      "nextDue": "2026-11-29",
+      "lastCompleted": "2026-11-22",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 8,
-      "updatedAt": "2026-11-15T17:38:49.356Z"
+      "timesCompleted": 9,
+      "updatedAt": "2026-11-23T01:51:38.026Z"
     },
     {
       "id": "softener-salt",
