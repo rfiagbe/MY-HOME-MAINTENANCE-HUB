@@ -936,6 +936,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:47:37.835Z"
+    },
+    {
+      "id": "mwslz0lca3vomf",
+      "taskId": "wh-leak-check",
+      "title": "Check water heater area for leaks and corrosion",
+      "category": "Water Heater",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:50:03.456Z"
     }
   ]
 }
