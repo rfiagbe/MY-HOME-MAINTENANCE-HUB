@@ -2138,12 +2138,12 @@
       ],
       "source": "Samsung oven care guidance.",
       "requires": null,
-      "nextDue": "2026-11-11",
-      "lastCompleted": null,
+      "nextDue": "2027-02-20",
+      "lastCompleted": "2026-11-22",
       "enabled": true,
       "notes": "",
-      "timesCompleted": 0,
-      "updatedAt": null
+      "timesCompleted": 1,
+      "updatedAt": "2026-11-23T01:47:33.956Z"
     },
     {
       "id": "ext-caulk",
