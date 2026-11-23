@@ -900,6 +900,18 @@
       "notes": "",
       "type": "completed",
       "loggedAt": "2026-11-23T01:46:11.853Z"
+    },
+    {
+      "id": "mwslv2o5zjpqgc",
+      "taskId": "ext-caulk",
+      "title": "Inspect and renew exterior caulk and seals",
+      "category": "Exterior & Roof",
+      "date": "2026-11-22",
+      "cost": 0,
+      "by": "me",
+      "notes": "",
+      "type": "completed",
+      "loggedAt": "2026-11-23T01:46:59.525Z"
     }
   ]
 }
